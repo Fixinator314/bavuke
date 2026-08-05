@@ -13,17 +13,34 @@
   </head>
   <body>
     <nav>
-      <div>
-        <div class="logo">B Bavuke</div>
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <img
+            src="./assets/images/logo/bavuke refined logo.png"
+            alt="Bavuke Foundation"
+          />
+        </a>
+
         <div class="nav-links">
           <a href="#home">Home</a>
           <a href="#about">About Us</a>
           <a href="#impact">Impact</a>
           <a href="#involved">Get Involved</a>
           <a href="#contact">Contact</a>
+
+          <button class="mobile-donate">Donate</button>
         </div>
+
         <button class="donate-btn">Donate</button>
+
+        <button class="menu-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+
+      <div class="nav-overlay"></div>
     </nav>
 
     <section id="home" class="hero">
@@ -196,20 +213,20 @@
           <div class="contact-box">
             <h3>Get in Touch</h3>
             <div class="contact-item">
-              <h4>📍 Address</h4>
+              <h4><i class="fa-solid fa-map-pin"></i> Address</h4>
               <p>
                 1707 Waterstone Park, Blackrock Road, Greenstone, Edenvale,
                 Johannesburg, South Africa 1609
               </p>
             </div>
             <div class="contact-item">
-              <h4>✉️ Email</h4>
+              <h4><i class="fa-solid fa-envelope"></i> Email</h4>
               <a href="mailto:mpillay@bavukefoundation.co.za"
                 >mpillay@bavukefoundation.co.za</a
               >
             </div>
             <div class="contact-item">
-              <h4>📞 Phone</h4>
+              <h4><i class="fa-solid fa-phone"></i> Phone</h4>
               <a href="tel:+27833016406">+27 83 301 6406</a>
             </div>
           </div>
@@ -247,20 +264,22 @@
           </div>
           <div>
             <h4>Connect</h4>
-            <p>📧 mpillay@bavukefoundation.co.za</p>
-            <p>📞 +27 83 301 6406</p>
+            <p>
+              <i class="fa-solid fa-map-pin"></i> mpillay@bavukefoundation.co.za
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +27 83 301 6406</p>
             <p>South Africa</p>
           </div>
         </div>
         <div class="footer-bottom">
           <p>
-            © 2024 Bavuke Foundation. All rights reserved. | Empowering through
-            Ubuntu
+            © <span id="current-year"></span> Bavuke Foundation. All rights
+            reserved. | Empowering through Ubuntu
           </p>
         </div>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
