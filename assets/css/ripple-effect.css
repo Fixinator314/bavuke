@@ -128,11 +128,12 @@
 
   font-size: clamp(65px, 8vw, 120px);
 
-  line-height: 0.82;
+  line-height: 0.85;
 
-  letter-spacing: -7px;
+  letter-spacing: -2px;
 
   font-weight: 800;
+  color: rgba(0, 0, 0, 0.743) !important;
 }
 
 .ripple-intro h2 span {

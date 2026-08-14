@@ -148,10 +148,6 @@
   font-weight: 700;
 
   letter-spacing: 3px;
-
-  /* opacity: 0; */
-
-  /* transform: translateY(25px); */
 }
 
 .inner-page-hero-eyebrow::before {
@@ -182,10 +178,6 @@
   letter-spacing: -7px;
 
   font-weight: 800;
-
-  /* opacity: 0;
-
-  transform: translateY(60px); */
 }
 
 .inner-page-hero-content h1 span {
@@ -208,10 +200,6 @@
   font-size: 17px;
 
   line-height: 1.7;
-
-  /* opacity: 0;
-
-  transform: translateY(30px); */
 }
 
 /* =========================================================

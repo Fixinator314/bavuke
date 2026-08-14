@@ -246,7 +246,13 @@
 .change-line {
   position: absolute;
 
+  left: 50%;
+
+  top: 46%;
+
   height: 1px;
+
+  width: 315px;
 
   background: rgba(1, 53, 133, 0.18);
 
@@ -258,7 +264,7 @@
 
   position: absolute;
 
-  right: 0;
+  right: -1px;
 
   top: 50%;
 
@@ -276,11 +282,11 @@
 .change-line-one {
   width: 330px;
 
-  left: calc(50% - 330px);
+  left: calc(76% - 330px);
 
   top: 46%;
 
-  transform: rotate(-22deg);
+  transform: rotate(200deg);
 }
 
 .change-line-two {
@@ -290,7 +296,7 @@
 
   top: 46%;
 
-  transform: rotate(-22deg);
+  transform: rotate(-20deg);
 }
 
 .change-line-three {
@@ -390,15 +396,15 @@
 }
 
 .change-node-health {
-  right: 0;
+  right: 3%;
 
   top: 5%;
 }
 
 .change-node-community {
-  right: 12%;
+  right: 3%;
 
-  bottom: 3%;
+  bottom: 20%;
 }
 
 /* =========================================================
@@ -415,6 +421,8 @@
   transform: translateX(-50%);
 
   text-align: center;
+
+  margin: -100px 0;
 }
 
 .change-result span {

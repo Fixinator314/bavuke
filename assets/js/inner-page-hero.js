@@ -6,7 +6,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
     console.warn("GSAP or ScrollTrigger is not loaded.");
-
     return;
   }
 
@@ -19,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   heroes.forEach((hero) => {
+    /* =====================================================
+       ELEMENTS
+    ====================================================== */
+
     const image = hero.querySelector(".inner-page-hero-image img");
 
     const word = hero.querySelector(".inner-page-hero-word");
@@ -33,151 +36,166 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const scrollLine = hero.querySelector(".inner-page-scroll-line span");
 
-    /* =================================================
-   INTRO ANIMATION
-================================================= */
+    /* =====================================================
+       INITIAL STATES
+
+       GSAP controls these.
+       CSS should NOT control opacity/transform.
+    ====================================================== */
 
     gsap.set(eyebrow, {
       opacity: 0,
-      y: 25,
+      y: 18,
     });
 
     gsap.set(title, {
       opacity: 0,
-      y: 60,
+      y: 28,
     });
 
     gsap.set(description, {
       opacity: 0,
-      y: 30,
+      y: 18,
     });
 
     gsap.set(bottom, {
       opacity: 0,
     });
 
-    const intro = gsap.timeline();
+    /* =====================================================
+       HERO INTRO
+
+       THIS ONLY PLAYS ONCE.
+
+       It is NOT connected to ScrollTrigger.
+    ====================================================== */
+
+    const intro = gsap.timeline({
+      defaults: {
+        ease: "power3.out",
+      },
+    });
 
     intro
 
       .to(eyebrow, {
         opacity: 1,
+
         y: 0,
-        duration: 0.65,
-        ease: "power3.out",
+
+        duration: 0.45,
       })
 
       .to(
         title,
         {
           opacity: 1,
+
           y: 0,
-          duration: 0.9,
-          ease: "power3.out",
+
+          duration: 0.7,
         },
-        "-=0.3",
+        "-=0.15",
       )
 
       .to(
         description,
         {
           opacity: 1,
+
           y: 0,
-          duration: 0.65,
-          ease: "power3.out",
+
+          duration: 0.5,
         },
-        "-=0.35",
+        "-=0.25",
       )
 
       .to(
         bottom,
         {
           opacity: 1,
-          duration: 0.5,
+
+          duration: 0.4,
         },
-        "-=0.2",
+        "-=0.15",
       );
 
-    /* =================================================
-           IMAGE PARALLAX
-        ================================================= */
+    /* =====================================================
+       IMAGE PARALLAX
 
-    gsap.to(image, {
-      yPercent: -10,
+       ONLY THE IMAGE MOVES WITH SCROLL.
+    ====================================================== */
 
-      scale: 1.05,
+    if (image) {
+      gsap.to(image, {
+        yPercent: -8,
 
-      ease: "none",
+        scale: 1.04,
 
-      scrollTrigger: {
-        trigger: hero,
+        ease: "none",
 
-        start: "top top",
+        scrollTrigger: {
+          trigger: hero,
 
-        end: "bottom top",
+          start: "top top",
 
-        scrub: 1.2,
-      },
-    });
+          end: "bottom top",
 
-    /* =================================================
-           BACKGROUND WORD PARALLAX
-        ================================================= */
+          scrub: 1.2,
+        },
+      });
+    }
 
-    gsap.to(word, {
-      xPercent: 12,
+    /* =====================================================
+       LARGE BACKGROUND WORD
 
-      yPercent: -15,
+       ALSO SCROLL BASED.
+    ====================================================== */
 
-      ease: "none",
+    if (word) {
+      gsap.to(word, {
+        xPercent: 10,
 
-      scrollTrigger: {
-        trigger: hero,
+        yPercent: -10,
 
-        start: "top top",
+        ease: "none",
 
-        end: "bottom top",
+        scrollTrigger: {
+          trigger: hero,
 
-        scrub: 1.5,
-      },
-    });
+          start: "top top",
 
-    /* =================================================
-           CONTENT EXIT
-        ================================================= */
+          end: "bottom top",
 
-    gsap.to([eyebrow, title, description], {
-      y: -60,
+          scrub: 1.5,
+        },
+      });
+    }
 
-      opacity: 0.2,
+    /* =====================================================
+       SCROLL INDICATOR
 
-      ease: "none",
-
-      scrollTrigger: {
-        trigger: hero,
-
-        start: "top top",
-
-        end: "bottom top",
-
-        scrub: 1,
-      },
-    });
-
-    /* =================================================
-           SCROLL LINE
-        ================================================= */
+       LOOPING ANIMATION.
+    ====================================================== */
 
     if (scrollLine) {
       gsap.to(scrollLine, {
         xPercent: 230,
 
-        ease: "none",
+        duration: 1.5,
 
         repeat: -1,
 
-        duration: 1.5,
+        ease: "none",
       });
     }
+  });
+
+  /* =======================================================
+     REFRESH AFTER EVERYTHING IS LOADED
+  ======================================================== */
+
+  window.addEventListener("load", () => {
+    ScrollTrigger.refresh();
   });
 });
