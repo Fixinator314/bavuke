@@ -4,17 +4,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bavuke Foundation</title>
+
+    <!-- =========================
+       MAIN STYLES
+  ========================== -->
     <link rel="stylesheet" href="styles.css" />
 
+    <!-- =========================
+       FONT AWESOME
+  ========================== -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
   </head>
   <body>
+    <!-- =========================
+       NAVBAR
+  ========================== -->
     <nav>
       <div class="nav-container">
-        <a href="#home" class="logo">
+        <a href="./index.html" class="logo">
           <img
             src="./assets/images/logo/bavuke refined logo.png"
             alt="Bavuke Foundation"
@@ -22,11 +32,11 @@
         </a>
 
         <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#impact">Impact</a>
-          <a href="#involved">Get Involved</a>
-          <a href="#contact">Contact</a>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About Us</a>
+          <a href="./impact.html">Impact</a>
+          <a href="./involved.html">Get Involved</a>
+          <a href="./contact.html">Contact</a>
 
           <button class="mobile-donate">Donate</button>
         </div>
@@ -43,47 +53,636 @@
       <div class="nav-overlay"></div>
     </nav>
 
+    <!-- =========================================================
+     HERO SECTION
+========================================================= -->
+
     <section id="home" class="hero">
+      <!-- Background -->
+      <div class="hero-background"></div>
+
+      <!-- Dark / Gradient Overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Hero Content -->
       <div class="hero-content">
-        <h1>Bavuke Foundation</h1>
-        <div class="yellow-line"></div>
-        <p class="hero-subtitle">
-          Raising Stronger Communities through Education, Health, and
-          Opportunity
+        <div class="hero-eyebrow">BAVUKE FOUNDATION</div>
+
+        <h1 class="hero-title">
+          <span class="hero-title-line">RISE UP</span>
+          <span class="hero-title-line hero-title-accent">AFRICA.</span>
+        </h1>
+
+        <div class="hero-line"></div>
+
+        <p class="hero-description">
+          Building healthy, well-educated and financially stable communities
+          through collective action.
         </p>
-        <p class="hero-tagline">Guided by Ubuntu: "I am because we are"</p>
+
         <div class="hero-buttons">
-          <button class="btn-primary">Partner With Us</button>
-          <button class="btn-secondary">Learn More</button>
+          <a href="#impact" class="hero-btn hero-btn-primary">
+            Explore Our Impact
+            <span class="hero-btn-arrow">→</span>
+          </a>
+
+          <a href="#involved" class="hero-btn hero-btn-secondary">
+            Get Involved
+          </a>
         </div>
       </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#ubuntu" class="hero-scroll">
+        <span class="hero-scroll-text"> SCROLL TO EXPLORE </span>
+
+        <span class="hero-scroll-line"></span>
+
+        <span class="hero-scroll-arrow"> ↓ </span>
+      </a>
+
+      <!-- Decorative Number -->
+      <div class="hero-number">01</div>
     </section>
 
-    <section id="about">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Vision & Mission</h2>
-          <div class="yellow-line"></div>
+    <!-- =========================================================
+     UBUNTU SECTION
+========================================================= -->
+
+    <section id="ubuntu" class="ubuntu-section">
+      <div class="ubuntu-background-text">UBUNTU</div>
+
+      <div class="ubuntu-content">
+        <div class="ubuntu-eyebrow">THE BAVUKE BELIEF</div>
+
+        <div class="ubuntu-symbol">
+          <div class="ubuntu-symbol-circle"></div>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="grid-2">
-          <div class="vision-content">
-            <h3>Our Mission</h3>
-            <p>
-              To improve lives by working collectively together so that others
-              can rise and achieve their full potential.
-            </p>
-            <div class="mission-box">
-              <p>Founded on Ubuntu - the belief that strength lies in unity.</p>
+
+        <h2 class="ubuntu-title">
+          We rise
+          <span>together.</span>
+        </h2>
+
+        <div class="ubuntu-divider"></div>
+
+        <p class="ubuntu-quote">"I am because we are."</p>
+
+        <p class="ubuntu-description">
+          Rooted in the spirit of Ubuntu, we believe that unity is strength and
+          that collective action can unlock human potential, reduce inequality,
+          and build resilient communities.
+        </p>
+      </div>
+
+      <div class="ubuntu-scroll-number">02</div>
+    </section>
+
+    <!-- =========================================================
+     WHO WE ARE SECTION
+========================================================= -->
+
+    <section id="about-preview" class="about-preview">
+      <!-- Background number -->
+      <div class="about-preview-number">03</div>
+
+      <div class="about-preview-container">
+        <!-- ========  IMAGE ======= -->
+
+        <div class="about-preview-image-wrap">
+          <div class="about-preview-image">
+            <img src="./assets/images/Bavuke1.png" alt="Bavuke Foundation" />
+          </div>
+
+          <div class="about-preview-image-label">BAVUKE FOUNDATION</div>
+        </div>
+
+        <!-- ========  CONTENT ======= -->
+
+        <div class="about-preview-content">
+          <div class="about-preview-eyebrow">WHO WE ARE</div>
+
+          <h2 class="about-preview-title">
+            Building
+            <span>stronger</span>
+            communities.
+          </h2>
+
+          <div class="about-preview-line"></div>
+
+          <p class="about-preview-lead">
+            Bavuke Foundation is committed to driving sustainable social change
+            by bringing communities, partners and stakeholders together.
+          </p>
+
+          <p class="about-preview-text">
+            We work to uplift and empower individuals and families, creating
+            opportunities for people to rise and achieve their full potential.
+          </p>
+
+          <a href="./about.html" class="about-preview-link">
+            Discover Our Story
+
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ========  DECORATIVE WORD ======= -->
+
+      <div class="about-preview-background-word">RISE</div>
+    </section>
+
+    <!-- =========================================================
+     PROGRAMME PILLARS
+========================================================= -->
+
+    <section id="programmes" class="programmes-section">
+      <!-- Background -->
+      <div class="programmes-bg-word">IMPACT</div>
+
+      <!-- Header -->
+      <div class="programmes-header">
+        <span class="programmes-eyebrow"> WHAT WE DO </span>
+
+        <h2>
+          Three ways we help
+          <span>communities rise.</span>
+        </h2>
+      </div>
+
+      <div class="programmes-scroll-area">
+        <!-- Pinned Experience -->
+        <div class="programmes-stage">
+          <!-- ======== EDUCATION ========== -->
+
+          <article
+            class="programme-panel programme-education"
+            data-programme="education"
+          >
+            <div class="programme-panel-number">01</div>
+
+            <div class="programme-panel-content">
+              <div class="programme-panel-label">EDUCATION</div>
+
+              <h3>
+                Rise Up
+                <span>Child of Africa</span>
+              </h3>
+
+              <p>
+                A comprehensive education pipeline supporting beneficiaries from
+                early childhood through to post-secondary opportunities.
+              </p>
+
+              <div class="programme-tags">
+                <span>Early Childhood</span>
+                <span>Primary School</span>
+                <span>Secondary School</span>
+                <span>Post-School</span>
+              </div>
+
+              <a href="./impact.html#education" class="programme-link">
+                Explore Education
+                <span>→</span>
+              </a>
             </div>
-          </div>
-          <div class="vision-placeholder">
-            <img src="./assets/images/Bavuke1.png" />
-          </div>
+
+            <div class="programme-panel-visual">
+              <img
+                src="./assets/images/educ-1024x613.jpg"
+                alt="Bavuke Education Programme"
+              />
+            </div>
+          </article>
+
+          <!-- ======= HEALTH ======= -->
+
+          <article
+            class="programme-panel programme-health"
+            data-programme="health"
+          >
+            <div class="programme-panel-number">02</div>
+
+            <div class="programme-panel-content">
+              <div class="programme-panel-label">HEALTH & WELLBEING</div>
+
+              <h3>
+                Rise Up
+                <span>and Play</span>
+              </h3>
+
+              <p>
+                Promoting holistic wellbeing through integrated health and
+                lifestyle interventions.
+              </p>
+
+              <div class="programme-tags">
+                <span>Life Skills</span>
+                <span>Sports</span>
+                <span>Nutrition</span>
+                <span>Health Awareness</span>
+              </div>
+
+              <a href="./impact.html#health" class="programme-link">
+                Explore Wellbeing
+                <span>→</span>
+              </a>
+            </div>
+
+            <div class="programme-panel-visual">
+              <img
+                src="./assets/images/health-1024x585.jpg"
+                alt="Bavuke Health and Wellbeing Programme"
+              />
+            </div>
+          </article>
+
+          <!-- ========= COMMUNITY ========= -->
+
+          <article
+            class="programme-panel programme-community"
+            data-programme="community"
+          >
+            <div class="programme-panel-number">03</div>
+
+            <div class="programme-panel-content">
+              <div class="programme-panel-label">COMMUNITY & VOLUNTEERISM</div>
+
+              <h3>
+                The Happy Hug
+                <span>Initiative</span>
+              </h3>
+
+              <p>
+                A flagship volunteer programme encouraging individuals and
+                organisations to contribute time, skills and resources.
+              </p>
+
+              <div class="programme-tags">
+                <span>Volunteer</span>
+                <span>Community Outreach</span>
+                <span>Social Support</span>
+                <span>Skills</span>
+              </div>
+
+              <a href="./involved.html#volunteer" class="programme-link">
+                Get Involved
+                <span>→</span>
+              </a>
+            </div>
+
+            <div class="programme-panel-visual">
+              <img
+                src="./assets/images/volu-1024x596.jpg"
+                alt="Bavuke Community and Volunteer Programme"
+              />
+            </div>
+          </article>
         </div>
+      </div>
+
+      <!-- Progress -->
+      <div class="programmes-progress">
+        <span class="programmes-progress-current"> 01 </span>
+
+        <div class="programmes-progress-track">
+          <div class="programmes-progress-bar"></div>
+        </div>
+
+        <span class="programmes-progress-total"> 03 </span>
       </div>
     </section>
 
-    <section class="bg-light">
+    <!-- =========================================================
+     IMPACT JOURNEY
+========================================================= -->
+
+    <section id="impact-journey" class="impact-journey">
+      <!-- Background word -->
+      <div class="impact-journey-bg">RISE</div>
+
+      <!-- Section heading -->
+      <div class="impact-journey-heading">
+        <div class="impact-journey-eyebrow">THE IMPACT JOURNEY</div>
+
+        <h2>
+          Creating pathways
+          <span>to rise.</span>
+        </h2>
+
+        <p>
+          Change happens when education, wellbeing, skills and opportunity come
+          together.
+        </p>
+      </div>
+
+      <!-- =====================================================
+       HORIZONTAL EXPERIENCE
+  ====================================================== -->
+
+      <div class="impact-journey-track">
+        <div class="impact-journey-inner">
+          <!-- ===============================================
+           STEP 01
+      ================================================ -->
+
+          <article class="impact-step impact-step-01">
+            <div class="impact-step-number">01</div>
+
+            <div class="impact-step-icon">+</div>
+
+            <div class="impact-step-content">
+              <span> THE FOUNDATION </span>
+
+              <h3>Education</h3>
+
+              <p>
+                Creating access to learning and development opportunities from
+                early childhood through post-school pathways.
+              </p>
+            </div>
+          </article>
+
+          <!-- ===============================================
+           STEP 02
+      ================================================ -->
+
+          <article class="impact-step impact-step-02">
+            <div class="impact-step-number">02</div>
+
+            <div class="impact-step-icon">+</div>
+
+            <div class="impact-step-content">
+              <span> THE PERSON </span>
+
+              <h3>Wellbeing</h3>
+
+              <p>
+                Supporting healthy lifestyles through life skills, sport,
+                nutrition and community health initiatives.
+              </p>
+            </div>
+          </article>
+
+          <!-- ===============================================
+           STEP 03
+      ================================================ -->
+
+          <article class="impact-step impact-step-03">
+            <div class="impact-step-number">03</div>
+
+            <div class="impact-step-icon">+</div>
+
+            <div class="impact-step-content">
+              <span> THE POTENTIAL </span>
+
+              <h3>Skills</h3>
+
+              <p>
+                Building capabilities through accredited training, skills
+                development and workplace readiness.
+              </p>
+            </div>
+          </article>
+
+          <!-- ===============================================
+           STEP 04
+      ================================================ -->
+
+          <article class="impact-step impact-step-04">
+            <div class="impact-step-number">04</div>
+
+            <div class="impact-step-icon">→</div>
+
+            <div class="impact-step-content">
+              <span> THE OPPORTUNITY </span>
+
+              <h3>Empowerment</h3>
+
+              <p>
+                Creating pathways toward financial stability, employment,
+                entrepreneurship and greater independence.
+              </p>
+            </div>
+          </article>
+
+          <!-- ======== FINAL ========== -->
+
+          <article class="impact-step impact-step-final">
+            <div class="impact-final-circle">
+              <span> STRONGER </span>
+
+              <strong> COMMUNITIES </strong>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Scroll instruction -->
+
+      <div class="impact-journey-scroll">
+        <span> SCROLL TO FOLLOW THE JOURNEY </span>
+
+        <div class="impact-scroll-line">
+          <div></div>
+        </div>
+
+        <span> 05 </span>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     GET INVOLVED / CONTRIBUTION SECTION
+========================================================= -->
+
+    <section id="give" class="give-section">
+      <!-- Background -->
+      <div class="give-bg-word">GIVE</div>
+
+      <!-- Section Number -->
+      <div class="give-number">06</div>
+
+      <!-- =====================================================
+       INTRO
+  ====================================================== -->
+
+      <div class="give-intro">
+        <div class="give-eyebrow">BE PART OF THE JOURNEY</div>
+
+        <h2>
+          Everyone has
+          <span>something to give.</span>
+        </h2>
+
+        <p>
+          Stronger communities are built when people bring their time, skills,
+          resources and support together.
+        </p>
+      </div>
+
+      <!-- =====================================================
+       CONTRIBUTION EXPERIENCE
+  ====================================================== -->
+
+      <div class="give-experience">
+        <!-- ===================================================
+         CENTRE
+    ==================================================== -->
+
+        <div class="give-centre">
+          <div class="give-centre-ring"></div>
+
+          <div class="give-centre-inner">
+            <span> TOGETHER </span>
+
+            <strong> WE RISE </strong>
+          </div>
+        </div>
+
+        <!-- ===================================================
+         TIME
+    ==================================================== -->
+
+        <article class="give-option give-option-time">
+          <div class="give-option-number">01</div>
+
+          <div class="give-option-icon">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+          </div>
+
+          <div class="give-option-content">
+            <span> YOUR TIME </span>
+
+            <h3>Volunteer</h3>
+
+            <p>
+              Give your time to support programmes, communities and people on
+              their journey.
+            </p>
+
+            <a href="./involved.html#volunteer">
+              Volunteer With Us
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- ===================================================
+         SKILLS
+    ==================================================== -->
+
+        <article class="give-option give-option-skills">
+          <div class="give-option-number">02</div>
+
+          <div class="give-option-icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+
+          <div class="give-option-content">
+            <span> YOUR SKILLS </span>
+
+            <h3>Share What You Know</h3>
+
+            <p>
+              Skills transfer and mentorship can create meaningful opportunities
+              for others to grow.
+            </p>
+
+            <a href="./involved.html#skills">
+              Share Your Skills
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- ===================================================
+         SUPPORT
+    ==================================================== -->
+
+        <article class="give-option give-option-support">
+          <div class="give-option-number">03</div>
+
+          <div class="give-option-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="give-option-content">
+            <span> YOUR SUPPORT </span>
+
+            <h3>Give</h3>
+
+            <p>
+              Financial and in-kind contributions help sustain programmes and
+              create opportunities for communities.
+            </p>
+
+            <a href="./involved.html#donate">
+              Support Bavuke
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- =====================================================
+       BOTTOM CTA
+  ====================================================== -->
+
+      <div class="give-bottom">
+        <p>There is a place for everyone.</p>
+
+        <a href="./involved.html" class="give-main-link">
+          Get Involved
+          <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CLOSING CTA
+========================================================= -->
+
+    <section id="closing" class="closing-section">
+      <!-- Background word -->
+      <div class="closing-bg-word">TOGETHER</div>
+
+      <!-- Decorative circle -->
+      <div class="closing-circle"></div>
+
+      <div class="closing-content">
+        <div class="closing-eyebrow">THE BAVUKE FOUNDATION</div>
+
+        <h2>
+          We rise
+          <span>together.</span>
+        </h2>
+
+        <p>When we work together, stronger communities become possible.</p>
+
+        <a href="./involved.html" class="closing-button">
+          Be Part of the Journey
+
+          <span>→</span>
+        </a>
+      </div>
+
+      <!-- Bottom message -->
+
+      <div class="closing-bottom">
+        <span> GUIDED BY UBUNTU </span>
+
+        <span> "I am because we are." </span>
+      </div>
+    </section>
+
+    <!-- =========================
+       FOCUS AREAS
+  ========================== -->
+    <!-- <section class="bg-light">
       <div class="container">
         <div class="section-header">
           <h2>Our Focus Areas</h2>
@@ -117,9 +716,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="bg-blue">
+    <!-- =========================
+       IMPACT STATISTICS
+  ========================== -->
+    <!-- <section class="bg-blue">
       <div class="container">
         <h2 style="text-align: center; color: white; margin-bottom: 60px">
           Our Impact
@@ -139,9 +741,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="impact" class="bg-light">
+    <!-- =========================
+       STORIES OF CHANGE
+  ========================== -->
+    <!-- <section id="impact" class="bg-light">
       <div class="container">
         <div class="section-header">
           <h2>Stories of Change</h2>
@@ -173,9 +778,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="involved">
+    <!-- =========================
+       GET INVOLVED
+  ========================== -->
+    <!-- <section id="involved">
       <div class="container">
         <div class="section-header">
           <h2>Get Involved</h2>
@@ -204,45 +812,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="contact" class="bg-blue">
-      <div class="container">
-        <h1 style="text-align: center; margin-bottom: 60px">Contact Us</h1>
-        <div class="grid-2">
-          <div class="contact-box">
-            <h3>Get in Touch</h3>
-            <div class="contact-item">
-              <h4><i class="fa-solid fa-map-pin"></i> Address</h4>
-              <p>
-                1707 Waterstone Park, Blackrock Road, Greenstone, Edenvale,
-                Johannesburg, South Africa 1609
-              </p>
-            </div>
-            <div class="contact-item">
-              <h4><i class="fa-solid fa-envelope"></i> Email</h4>
-              <a href="mailto:mpillay@bavukefoundation.co.za"
-                >mpillay@bavukefoundation.co.za</a
-              >
-            </div>
-            <div class="contact-item">
-              <h4><i class="fa-solid fa-phone"></i> Phone</h4>
-              <a href="tel:+27833016406">+27 83 301 6406</a>
-            </div>
-          </div>
-          <div class="contact-box">
-            <h3>Send a Message</h3>
-            <form id="contact-form">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <textarea placeholder="Your Message" rows="5" required></textarea>
-              <button type="submit" class="form-submit">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- =========================
+       FOOTER
+  ========================== -->
     <footer>
       <div class="container">
         <div class="grid-3">
@@ -279,6 +853,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- =========================GSAP========================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- =========================JAVASCRIPT========================== -->
+    <script src="./assets/js/programmes.js"></script>
+    <script src="./assets/js/hero.js"></script>
+    <script src="./assets/js/ubuntu.js"></script>
+    <script src="./assets/js/about.js"></script>
+    <script src="./assets/js/impact-journey.js"></script>
+    <script src="./assets/js/give.js"></script>
+    <script src="./assets/js/closing.js"></script>
 
     <script src="./assets/js/script.js"></script>
   </body>

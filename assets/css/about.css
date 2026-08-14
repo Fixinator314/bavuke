@@ -1,0 +1,474 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   WHO WE ARE / ABOUT PREVIEW
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.about-preview {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  padding: 150px 60px;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.about-preview-container {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1280px;
+
+  min-height: 700px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(0, 0.95fr);
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+/* =========================================================
+   IMAGE WRAPPER
+========================================================= */
+
+.about-preview-image-wrap {
+  position: relative;
+
+  height: 650px;
+
+  overflow: visible;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.about-preview-image {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+
+  border-radius: 2px;
+
+  background: #e8edf3;
+}
+
+/* =========================================================
+   IMAGE ELEMENT
+========================================================= */
+
+.about-preview-image img {
+  width: 100%;
+
+  height: 115%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  display: block;
+
+  will-change: transform;
+}
+
+/* =========================================================
+   IMAGE LABEL
+========================================================= */
+
+.about-preview-image-label {
+  position: absolute;
+
+  left: -1px;
+
+  bottom: -1px;
+
+  z-index: 3;
+
+  padding: 15px 22px;
+
+  background: #013585;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.about-preview-content {
+  position: relative;
+
+  z-index: 3;
+
+  max-width: 580px;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.about-preview-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 28px;
+
+  color: #013585;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  opacity: 0;
+
+  transform: translateY(25px);
+}
+
+/* Yellow marker */
+
+.about-preview-eyebrow::before {
+  content: "";
+
+  display: block;
+
+  width: 38px;
+
+  height: 3px;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.about-preview-title {
+  margin: 0;
+
+  color: #013585;
+
+  font-size: clamp(52px, 6vw, 88px);
+
+  line-height: 0.95;
+
+  letter-spacing: -4px;
+
+  font-weight: 700;
+
+  opacity: 0;
+
+  transform: translateY(50px);
+}
+
+/* =========================================================
+   TITLE ACCENT
+========================================================= */
+
+.about-preview-title span {
+  display: block;
+
+  color: #ffc107;
+}
+
+/* =========================================================
+   YELLOW LINE
+========================================================= */
+
+.about-preview-line {
+  width: 0;
+
+  height: 4px;
+
+  background: #ffc107;
+
+  margin: 35px 0;
+}
+
+/* =========================================================
+   LEAD
+========================================================= */
+
+.about-preview-lead {
+  max-width: 550px;
+
+  margin: 0 0 20px;
+
+  color: #1a3a5c;
+
+  font-size: 21px;
+
+  line-height: 1.6;
+
+  font-weight: 500;
+
+  opacity: 0;
+
+  transform: translateY(30px);
+}
+
+/* =========================================================
+   BODY TEXT
+========================================================= */
+
+.about-preview-text {
+  max-width: 530px;
+
+  margin: 0;
+
+  color: #666;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  opacity: 0;
+
+  transform: translateY(30px);
+}
+
+/* =========================================================
+   LINK
+========================================================= */
+
+.about-preview-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-top: 38px;
+
+  padding-bottom: 8px;
+
+  border-bottom: 2px solid #ffc107;
+
+  color: #013585;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  text-decoration: none;
+
+  opacity: 0;
+
+  transform: translateY(25px);
+
+  transition:
+    gap 0.3s ease,
+    color 0.3s ease;
+}
+
+.about-preview-link span {
+  font-size: 21px;
+
+  line-height: 1;
+}
+
+.about-preview-link:hover {
+  gap: 23px;
+
+  color: #ffc107;
+
+  text-decoration: none;
+}
+
+/* =========================================================
+   LARGE BACKGROUND WORD
+========================================================= */
+
+.about-preview-background-word {
+  position: absolute;
+
+  right: -5%;
+
+  bottom: -10%;
+
+  z-index: 1;
+
+  font-size: clamp(180px, 28vw, 480px);
+
+  font-weight: 800;
+
+  line-height: 0.8;
+
+  letter-spacing: -15px;
+
+  color: rgba(1, 53, 133, 0.035);
+
+  pointer-events: none;
+
+  user-select: none;
+
+  will-change: transform;
+}
+
+/* =========================================================
+   SECTION NUMBER
+========================================================= */
+
+.about-preview-number {
+  position: absolute;
+
+  top: 50%;
+
+  left: 28px;
+
+  z-index: 4;
+
+  color: rgba(1, 53, 133, 0.3);
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  writing-mode: vertical-rl;
+
+  opacity: 0;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .about-preview {
+    padding: 120px 40px;
+  }
+
+  .about-preview-container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+  }
+
+  .about-preview-image-wrap {
+    height: 550px;
+  }
+
+  .about-preview-title {
+    font-size: clamp(48px, 7vw, 70px);
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .about-preview {
+    min-height: auto;
+
+    padding: 100px 24px 120px;
+  }
+
+  .about-preview-container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 65px;
+
+    min-height: auto;
+  }
+
+  .about-preview-image-wrap {
+    width: 100%;
+
+    height: 500px;
+  }
+
+  .about-preview-content {
+    width: 100%;
+  }
+
+  .about-preview-title {
+    font-size: clamp(48px, 15vw, 75px);
+
+    letter-spacing: -3px;
+  }
+
+  .about-preview-lead {
+    font-size: 18px;
+  }
+
+  .about-preview-text {
+    font-size: 15px;
+  }
+
+  .about-preview-background-word {
+    right: -15%;
+
+    bottom: 0;
+
+    font-size: 45vw;
+  }
+
+  .about-preview-number {
+    left: auto;
+
+    right: 24px;
+
+    top: 45px;
+
+    writing-mode: horizontal-tb;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+  .about-preview {
+    padding: 90px 20px 100px;
+  }
+
+  .about-preview-image-wrap {
+    height: 420px;
+  }
+
+  .about-preview-image-label {
+    padding: 12px 16px;
+
+    font-size: 9px;
+  }
+}

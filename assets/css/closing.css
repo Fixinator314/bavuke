@@ -1,0 +1,328 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   CLOSING CTA
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.closing-section {
+  position: relative;
+
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #ffc107;
+
+  color: #013585;
+}
+
+/* =========================================================
+   BACKGROUND WORD
+========================================================= */
+
+.closing-bg-word {
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 0;
+
+  font-size: clamp(180px, 30vw, 520px);
+
+  font-weight: 800;
+
+  line-height: 0.8;
+
+  letter-spacing: -20px;
+
+  white-space: nowrap;
+
+  color: rgba(1, 53, 133, 0.055);
+
+  pointer-events: none;
+
+  user-select: none;
+
+  will-change: transform;
+}
+
+/* =========================================================
+   DECORATIVE CIRCLE
+========================================================= */
+
+.closing-circle {
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  width: clamp(350px, 45vw, 700px);
+
+  aspect-ratio: 1;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(1, 53, 133, 0.2);
+
+  border-radius: 50%;
+
+  z-index: 1;
+}
+
+.closing-circle::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 35px;
+
+  border: 1px solid rgba(1, 53, 133, 0.12);
+
+  border-radius: 50%;
+}
+
+.closing-circle::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 70px;
+
+  border: 1px solid rgba(1, 53, 133, 0.08);
+
+  border-radius: 50%;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.closing-content {
+  position: relative;
+
+  z-index: 3;
+
+  width: min(850px, calc(100% - 48px));
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.closing-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  color: #013585;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  opacity: 0;
+
+  transform: translateY(25px);
+}
+
+.closing-eyebrow::before,
+.closing-eyebrow::after {
+  content: "";
+
+  width: 35px;
+
+  height: 3px;
+
+  background: #013585;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.closing-content h2 {
+  margin: 25px 0 0;
+
+  color: #013585;
+
+  font-size: clamp(70px, 11vw, 155px);
+
+  line-height: 0.82;
+
+  letter-spacing: -8px;
+
+  font-weight: 800;
+
+  opacity: 0;
+
+  transform: translateY(60px);
+}
+
+.closing-content h2 span {
+  display: block;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.closing-content p {
+  max-width: 500px;
+
+  margin: 35px auto 0;
+
+  color: rgba(1, 53, 133, 0.75);
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  opacity: 0;
+
+  transform: translateY(30px);
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.closing-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 38px;
+
+  padding: 17px 25px;
+
+  border: 2px solid #013585;
+
+  color: #013585;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-decoration: none;
+
+  opacity: 0;
+
+  transform: translateY(25px);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    gap 0.3s ease;
+}
+
+.closing-button span {
+  font-size: 21px;
+}
+
+.closing-button:hover {
+  background: #013585;
+
+  color: #ffc107;
+
+  gap: 25px;
+}
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.closing-bottom {
+  position: absolute;
+
+  left: 0;
+
+  bottom: 35px;
+
+  z-index: 4;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 40px;
+
+  color: rgba(1, 53, 133, 0.5);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .closing-section {
+    min-height: 100svh;
+  }
+
+  .closing-bg-word {
+    font-size: 32vw;
+
+    letter-spacing: -5px;
+  }
+
+  .closing-circle {
+    width: 85vw;
+  }
+
+  .closing-content h2 {
+    font-size: clamp(65px, 18vw, 100px);
+
+    letter-spacing: -5px;
+  }
+
+  .closing-content p {
+    font-size: 15px;
+  }
+
+  .closing-bottom {
+    bottom: 25px;
+
+    padding: 0 24px;
+
+    flex-direction: column;
+
+    gap: 8px;
+  }
+}

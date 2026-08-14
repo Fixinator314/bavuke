@@ -1,33 +1,88 @@
-document.getElementById("current-year").textContent = new Date().getFullYear();
+/* =========================================================
+   BAVUKE FOUNDATION
+   MAIN JAVASCRIPT
+========================================================= */
 
-document.getElementById("current-year").textContent = new Date().getFullYear();
+/* =========================================================
+   DOM READY
+========================================================= */
 
-const menu = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav-links");
-const overlay = document.querySelector(".nav-overlay");
+document.addEventListener("DOMContentLoaded", () => {
+  /* =======================================================
+     CURRENT YEAR
+  ======================================================= */
 
-menu.addEventListener("click", () => {
-  menu.classList.toggle("active");
-  nav.classList.toggle("active");
-  overlay.classList.toggle("active");
-  document.body.classList.toggle("menu-open");
-});
+  const currentYear = document.getElementById("current-year");
 
-overlay.addEventListener("click", closeMenu);
-
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", closeMenu);
-});
-
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    closeMenu();
+  if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
   }
-});
 
-function closeMenu() {
-  menu.classList.remove("active");
-  nav.classList.remove("active");
-  overlay.classList.remove("active");
-  document.body.classList.remove("menu-open");
-}
+  /* =======================================================
+     NAVIGATION
+  ======================================================= */
+
+  const menu = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav-links");
+  const overlay = document.querySelector(".nav-overlay");
+
+  if (!menu || !nav || !overlay) {
+    return;
+  }
+
+  /* =======================================================
+     OPEN / CLOSE MENU
+  ======================================================= */
+
+  menu.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("active");
+
+    nav.classList.toggle("active");
+
+    overlay.classList.toggle("active");
+
+    document.body.classList.toggle("menu-open");
+
+    menu.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  /* =======================================================
+     CLOSE MENU
+  ======================================================= */
+
+  function closeMenu() {
+    menu.classList.remove("active");
+
+    nav.classList.remove("active");
+
+    overlay.classList.remove("active");
+
+    document.body.classList.remove("menu-open");
+
+    menu.setAttribute("aria-expanded", "false");
+  }
+
+  /* =======================================================
+     OVERLAY
+  ======================================================= */
+
+  overlay.addEventListener("click", closeMenu);
+
+  /* =======================================================
+     NAV LINKS
+  ======================================================= */
+
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  /* =======================================================
+     ESCAPE KEY
+  ======================================================= */
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+});

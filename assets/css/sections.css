@@ -1,0 +1,127 @@
+/* =========================================================
+   SECTION STYLES
+========================================================= */
+
+.section-header {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+/* =========================================================
+   BACKGROUNDS
+========================================================= */
+
+.bg-light {
+  background: #f5f5f5;
+}
+
+.bg-blue {
+  background: linear-gradient(135deg, #2c5aa0 0%, #1a3a5c 100%);
+
+  color: white;
+}
+
+.bg-blue h2,
+.bg-blue h3,
+.bg-blue h4 {
+  color: white;
+}
+
+/* =========================================================
+   WHITE SECTION TITLE
+========================================================= */
+
+.section-title-white {
+  text-align: center;
+
+  color: white;
+
+  margin-bottom: 60px;
+}
+
+/* =========================================================
+   MISSION
+========================================================= */
+
+.mission-box {
+  background: #2c5aa0;
+
+  color: white;
+
+  padding: 30px;
+
+  border-radius: 8px;
+
+  margin-top: 25px;
+}
+
+.mission-box p {
+  margin: 0;
+}
+
+/* =========================================================
+   VISION
+========================================================= */
+
+.vision-content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  width: 100%;
+}
+
+.vision-placeholder {
+  background: linear-gradient(135deg, #e8f0f7 0%, #f0f4f9 100%);
+
+  padding: 10px;
+
+  border-radius: 12px;
+
+  width: 100%;
+
+  text-align: center;
+
+  color: #999;
+}
+
+.vision-placeholder img {
+  max-width: 100%;
+
+  height: auto;
+
+  border-radius: 12px;
+}
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.stat {
+  text-align: center;
+
+  margin: 30px 0;
+}
+
+.stat-number {
+  font-size: 54px;
+
+  font-weight: 700;
+
+  color: #ffc107;
+
+  margin-bottom: 12px;
+}
+
+.stat p {
+  font-size: 16px;
+
+  opacity: 0.9;
+}

@@ -1,0 +1,403 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   ABOUT — VISION & MISSION
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.vision-mission {
+  position: relative;
+
+  min-height: 150vh;
+
+  overflow: hidden;
+
+  background: #013585;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   BACKGROUND WORD
+========================================================= */
+
+.vision-mission-bg {
+  position: absolute;
+
+  left: -8%;
+
+  top: 28%;
+
+  z-index: 0;
+
+  font-size: clamp(280px, 42vw, 700px);
+
+  line-height: 0.7;
+
+  font-weight: 800;
+
+  letter-spacing: -35px;
+
+  color: rgba(255, 255, 255, 0.035);
+
+  pointer-events: none;
+
+  user-select: none;
+
+  white-space: nowrap;
+
+  will-change: transform;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.vision-mission-number {
+  position: absolute;
+
+  top: 70px;
+
+  right: 40px;
+
+  z-index: 4;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.vision-mission-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1200px, calc(100% - 80px));
+
+  min-height: 140vh;
+
+  margin: 0 auto;
+
+  padding: 180px 0 150px;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.vision-mission-intro {
+  max-width: 900px;
+}
+
+.vision-mission-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.vision-mission-eyebrow::before {
+  content: "";
+
+  width: 40px;
+
+  height: 3px;
+
+  background: #ffc107;
+}
+
+.vision-mission-intro h2 {
+  margin: 35px 0 0;
+
+  font-size: clamp(80px, 11vw, 160px);
+
+  line-height: 0.8;
+
+  letter-spacing: -9px;
+
+  font-weight: 800;
+  color: rgb(221, 219, 219) !important;
+}
+
+.vision-mission-intro h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+.vision-mission-line {
+  width: 130px;
+
+  height: 4px;
+
+  margin-top: 55px;
+
+  background: #ffc107;
+
+  transform-origin: left center;
+}
+
+/* =========================================================
+   MISSION
+========================================================= */
+
+.mission-block {
+  width: min(780px, 80%);
+
+  margin-top: 220px;
+
+  margin-left: auto;
+}
+
+.mission-label {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.mission-statement {
+  margin-top: 35px;
+
+  color: #ffffff;
+
+  font-size: clamp(30px, 4vw, 58px);
+
+  line-height: 1.2;
+
+  letter-spacing: -2px;
+
+  font-weight: 500;
+}
+
+.mission-underline {
+  width: 100%;
+
+  height: 2px;
+
+  margin-top: 50px;
+
+  background: linear-gradient(90deg, #ffc107 0%, rgba(255, 193, 7, 0.15) 100%);
+}
+
+/* =========================================================
+   UBUNTU
+========================================================= */
+
+.ubuntu-block {
+  display: grid;
+
+  grid-template-columns:
+    120px
+    1fr;
+
+  gap: 50px;
+
+  width: min(900px, 100%);
+
+  margin-top: 220px;
+}
+
+.ubuntu-symbol {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 90px;
+
+  height: 90px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 50%;
+
+  color: #ffc107;
+
+  font-size: 35px;
+
+  font-weight: 300;
+}
+
+.ubuntu-content > span {
+  color: #ffc107;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.ubuntu-content h3 {
+  margin: 20px 0 25px;
+
+  font-size: clamp(45px, 6vw, 85px);
+
+  line-height: 0.9;
+
+  letter-spacing: -5px;
+
+  font-weight: 700;
+}
+
+.ubuntu-content h3 span {
+  color: #ffc107;
+}
+
+.ubuntu-content p {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.vision-mission-bottom {
+  position: absolute;
+
+  left: 0;
+
+  bottom: 30px;
+
+  z-index: 5;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 0 40px;
+
+  color: rgba(255, 255, 255, 0.3);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+  .vision-mission {
+    min-height: auto;
+  }
+
+  .vision-mission-container {
+    min-height: auto;
+
+    width: calc(100% - 48px);
+
+    padding: 120px 0 130px;
+  }
+
+  .vision-mission-intro h2 {
+    font-size: clamp(65px, 17vw, 110px);
+
+    letter-spacing: -6px;
+  }
+
+  .mission-block {
+    width: 100%;
+
+    margin-top: 150px;
+  }
+
+  .ubuntu-block {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    margin-top: 150px;
+  }
+
+  .vision-mission-bg {
+    font-size: 55vw;
+
+    letter-spacing: -10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vision-mission-number {
+    top: 35px;
+
+    right: 24px;
+  }
+
+  .vision-mission-intro h2 {
+    font-size: 18vw;
+
+    line-height: 0.85;
+  }
+
+  .mission-statement {
+    font-size: 29px;
+
+    letter-spacing: -1px;
+  }
+
+  .ubuntu-content h3 {
+    font-size: 48px;
+
+    letter-spacing: -3px;
+  }
+
+  .vision-mission-bottom {
+    position: relative;
+
+    bottom: auto;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    padding: 0 24px 30px;
+  }
+}

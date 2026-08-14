@@ -1,0 +1,573 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   PROGRAMME PILLARS
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.programmes-section {
+  position: relative;
+
+  width: 100%;
+
+  background: #f4f5f6;
+
+  overflow: hidden;
+
+  padding-top: 140px;
+}
+
+/* =========================================================
+   BACKGROUND WORD
+========================================================= */
+
+.programmes-bg-word {
+  position: absolute;
+
+  top: 240px;
+
+  left: -5%;
+
+  z-index: 0;
+
+  font-size: clamp(180px, 30vw, 520px);
+
+  font-weight: 800;
+
+  line-height: 0.8;
+
+  letter-spacing: -15px;
+
+  color: rgba(1, 53, 133, 0.035);
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.programmes-header {
+  position: relative;
+
+  z-index: 5;
+
+  width: min(1100px, calc(100% - 80px));
+
+  margin: 0 auto 80px;
+}
+
+.programmes-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #013585;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.programmes-eyebrow::before {
+  content: "";
+
+  width: 38px;
+
+  height: 3px;
+
+  background: #ffc107;
+}
+
+.programmes-header h2 {
+  max-width: 850px;
+
+  margin: 25px 0 0;
+
+  color: #013585;
+
+  font-size: clamp(52px, 7vw, 100px);
+
+  line-height: 0.92;
+
+  letter-spacing: -5px;
+}
+
+.programmes-header h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+/* =========================================================
+   SCROLL AREA
+========================================================= */
+
+.programmes-scroll-area {
+  position: relative;
+
+  height: 300vh;
+}
+
+/* =========================================================
+   STAGE
+========================================================= */
+
+.programmes-stage {
+  position: relative;
+
+  width: 100%;
+
+  height: 100vh;
+
+  min-height: 650px;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   PANELS
+========================================================= */
+
+.programme-panel {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    0.85fr
+    1.15fr;
+
+  align-items: center;
+
+  gap: 70px;
+
+  padding: 70px max(60px, 8vw);
+
+  color: #ffffff;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   ACTIVE PANEL
+========================================================= */
+
+.programme-panel.is-active {
+  opacity: 1;
+
+  visibility: visible;
+
+  pointer-events: auto;
+}
+
+/* =========================================================
+   BACKGROUNDS
+========================================================= */
+
+.programme-education {
+  background: linear-gradient(110deg, #013585 0%, #1a3a5c 100%);
+}
+
+.programme-health {
+  background: linear-gradient(110deg, #315f50 0%, #173d31 100%);
+}
+
+.programme-community {
+  background: linear-gradient(110deg, #b56b00 0%, #7b4300 100%);
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.programme-panel-number {
+  position: absolute;
+
+  top: 45px;
+
+  left: max(60px, 8vw);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.programme-panel-content {
+  position: relative;
+
+  z-index: 3;
+
+  max-width: 620px;
+}
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.programme-panel-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 25px;
+}
+
+.programme-panel-label::before {
+  content: "";
+
+  width: 35px;
+
+  height: 3px;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.programme-panel h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(55px, 7vw, 105px);
+
+  line-height: 0.9;
+
+  letter-spacing: -5px;
+
+  font-weight: 700;
+}
+
+.programme-panel h3 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.programme-panel p {
+  max-width: 560px;
+
+  margin: 35px 0 0;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.programme-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 28px;
+}
+
+.programme-tags span {
+  padding: 8px 13px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  border-radius: 100px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+/* =========================================================
+   LINK
+========================================================= */
+
+.programme-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 35px;
+
+  padding-bottom: 8px;
+
+  border-bottom: 2px solid #ffc107;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.programme-link span {
+  font-size: 21px;
+
+  transition: transform 0.3s ease;
+}
+
+.programme-link:hover {
+  color: #ffc107;
+
+  text-decoration: none;
+}
+
+.programme-link:hover span {
+  transform: translateX(6px);
+}
+
+/* =========================================================
+   VISUAL
+========================================================= */
+
+.programme-panel-visual {
+  position: relative;
+
+  width: 100%;
+
+  height: 65vh;
+
+  min-height: 400px;
+
+  overflow: hidden;
+
+  border-radius: 2px;
+}
+
+.programme-panel-visual::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), transparent);
+
+  pointer-events: none;
+}
+
+.programme-panel-visual img {
+  width: 100%;
+
+  height: 115%;
+
+  object-fit: cover;
+
+  display: block;
+
+  will-change: transform;
+}
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.programmes-progress {
+  position: fixed;
+
+  z-index: 20;
+
+  right: 55px;
+
+  top: 50%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 14px;
+
+  transform: translateY(-50%);
+
+  color: #ffffff;
+
+  mix-blend-mode: difference;
+
+  pointer-events: none;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transition: opacity 0.3s ease;
+}
+
+.programmes-section.programmes-active .programmes-progress {
+  opacity: 1;
+
+  visibility: visible;
+}
+
+.programmes-progress-current,
+.programmes-progress-total {
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.programmes-progress-track {
+  position: relative;
+
+  width: 2px;
+
+  height: 110px;
+
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.programmes-progress-bar {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 0;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .programmes-section {
+    padding-top: 100px;
+  }
+
+  .programmes-header {
+    width: calc(100% - 48px);
+
+    margin-bottom: 50px;
+  }
+
+  .programmes-header h2 {
+    font-size: clamp(45px, 14vw, 75px);
+
+    letter-spacing: -3px;
+  }
+
+  .programmes-scroll-area {
+    height: auto;
+  }
+
+  .programmes-stage {
+    height: auto;
+
+    min-height: auto;
+  }
+
+  .programme-panel {
+    position: relative;
+
+    inset: auto;
+
+    height: auto;
+
+    min-height: 100svh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    gap: 45px;
+
+    padding: 100px 24px;
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+  }
+
+  .programme-panel-number {
+    top: 35px;
+
+    left: 24px;
+  }
+
+  .programme-panel h3 {
+    font-size: clamp(52px, 14vw, 80px);
+
+    letter-spacing: -3px;
+  }
+
+  .programme-panel p {
+    font-size: 16px;
+  }
+
+  .programme-panel-visual {
+    width: 100%;
+
+    height: 300px;
+
+    min-height: 0;
+  }
+
+  .programmes-progress {
+    display: none;
+  }
+}

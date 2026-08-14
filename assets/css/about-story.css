@@ -1,0 +1,427 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   ABOUT — WHY BAVUKE EXISTS
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.about-story {
+  position: relative;
+
+  min-height: 120vh;
+
+  overflow: hidden;
+
+  background: #f5f5f2;
+
+  color: #013585;
+}
+
+/* =========================================================
+   LARGE NUMBER
+========================================================= */
+
+.about-story-number {
+  position: absolute;
+
+  top: -40px;
+
+  right: -20px;
+
+  z-index: 0;
+
+  font-size: clamp(300px, 40vw, 650px);
+
+  font-weight: 800;
+
+  line-height: 0.8;
+
+  letter-spacing: -30px;
+
+  color: rgba(1, 53, 133, 0.035);
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.about-story-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1200px, calc(100% - 80px));
+
+  min-height: 110vh;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    0.8fr
+    1.2fr;
+
+  gap: 100px;
+
+  padding: 150px 0;
+}
+
+/* =========================================================
+   LEFT INTRO
+========================================================= */
+
+.about-story-intro {
+  position: relative;
+
+  align-self: start;
+
+  padding-top: 80px;
+}
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.about-story-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 30px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #013585;
+}
+
+.about-story-label::before {
+  content: "";
+
+  width: 35px;
+
+  height: 3px;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.about-story-intro h2 {
+  margin: 0;
+
+  max-width: 500px;
+
+  font-size: clamp(65px, 8vw, 120px);
+
+  line-height: 0.82;
+
+  letter-spacing: -6px;
+
+  font-weight: 800;
+}
+
+.about-story-intro h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+/* =========================================================
+   LINE
+========================================================= */
+
+.about-story-line {
+  width: 100px;
+
+  height: 3px;
+
+  margin-top: 45px;
+
+  background: #013585;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.about-story-content {
+  position: relative;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.about-story-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 600px;
+
+  overflow: hidden;
+
+  background: #013585;
+}
+
+.about-story-image img {
+  width: 100%;
+
+  height: 120%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  display: block;
+
+  will-change: transform;
+}
+
+/* =========================================================
+   IMAGE LABEL
+========================================================= */
+
+.about-story-image-label {
+  position: absolute;
+
+  right: 25px;
+
+  bottom: 25px;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.about-story-image-label span:first-child {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 32px;
+
+  height: 32px;
+
+  border-radius: 50%;
+
+  background: #ffc107;
+
+  color: #013585;
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.about-story-text {
+  max-width: 620px;
+
+  margin-top: 70px;
+
+  margin-left: auto;
+}
+
+.about-story-text p {
+  margin: 0 0 28px;
+
+  color: rgba(1, 53, 133, 0.72);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.about-story-text .about-story-lead {
+  color: #013585;
+
+  font-size: clamp(25px, 3vw, 38px);
+
+  line-height: 1.25;
+
+  letter-spacing: -1px;
+
+  font-weight: 600;
+}
+
+.about-story-text strong {
+  color: #013585;
+}
+
+/* =========================================================
+   LINK
+========================================================= */
+
+.about-story-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 15px;
+
+  padding: 16px 22px;
+
+  border: 2px solid #013585;
+
+  color: #013585;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    gap 0.3s ease;
+}
+
+.about-story-link span {
+  font-size: 20px;
+}
+
+.about-story-link:hover {
+  background: #013585;
+
+  color: #ffc107;
+
+  gap: 25px;
+}
+
+/* =========================================================
+   BOTTOM STATEMENT
+========================================================= */
+
+.about-story-bottom {
+  position: absolute;
+
+  bottom: 30px;
+
+  left: 0;
+
+  z-index: 3;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 0 40px;
+
+  color: rgba(1, 53, 133, 0.35);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+  .about-story-container {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+
+    padding: 100px 0 120px;
+  }
+
+  .about-story-intro {
+    padding-top: 0;
+  }
+
+  .about-story-intro h2 {
+    max-width: 600px;
+  }
+
+  .about-story-image {
+    height: 500px;
+  }
+
+  .about-story-text {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-story {
+    min-height: auto;
+  }
+
+  .about-story-container {
+    width: calc(100% - 48px);
+  }
+
+  .about-story-number {
+    font-size: 60vw;
+  }
+
+  .about-story-intro h2 {
+    font-size: clamp(60px, 18vw, 90px);
+
+    letter-spacing: -5px;
+  }
+
+  .about-story-image {
+    height: 400px;
+  }
+
+  .about-story-text {
+    margin-top: 50px;
+  }
+
+  .about-story-text .about-story-lead {
+    font-size: 25px;
+  }
+
+  .about-story-bottom {
+    position: relative;
+
+    bottom: auto;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    padding: 0 24px 30px;
+  }
+}

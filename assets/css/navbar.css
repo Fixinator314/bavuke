@@ -1,0 +1,292 @@
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background: white;
+
+  z-index: 1000;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================================
+   NAV CONTAINER
+========================================================= */
+
+.nav-container {
+  max-width: 1400px;
+
+  margin: auto;
+
+  height: 90px;
+
+  padding: 0 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+  height: 90px;
+
+  width: auto;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.logo img {
+  height: 90px;
+
+  width: auto;
+
+  display: block;
+}
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+.nav-links {
+  display: flex;
+
+  gap: 40px;
+
+  align-items: center;
+}
+
+.nav-links a {
+  color: #333;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffc107;
+}
+
+/* =========================================================
+   DONATE BUTTON
+========================================================= */
+
+.donate-btn {
+  background: #ffc107;
+
+  color: #013585;
+
+  padding: 12px 30px;
+
+  border-radius: 8px;
+
+  font-weight: 700;
+}
+
+.donate-btn:hover {
+  background: #ffb300;
+}
+
+/* =========================================================
+   MOBILE DONATE
+========================================================= */
+
+.mobile-donate {
+  display: none;
+}
+
+/* =========================================================
+   HAMBURGER
+========================================================= */
+
+.menu-toggle {
+  display: none;
+
+  width: 35px;
+  height: 45px;
+
+  background: none;
+
+  position: relative;
+
+  z-index: 1002;
+}
+
+.menu-toggle span {
+  position: absolute;
+
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: #ffc107;
+
+  border-radius: 100px;
+
+  transition: 0.35s ease;
+}
+
+.menu-toggle span:nth-child(1) {
+  top: 8px;
+}
+
+.menu-toggle span:nth-child(2) {
+  top: 20px;
+}
+
+.menu-toggle span:nth-child(3) {
+  top: 32px;
+}
+
+/* =========================================================
+   HAMBURGER ACTIVE
+========================================================= */
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg);
+
+  top: 20px;
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+
+  top: 20px;
+}
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.nav-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transition: 0.35s ease;
+
+  z-index: 998;
+}
+
+.nav-overlay.active {
+  opacity: 1;
+
+  visibility: visible;
+}
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .donate-btn {
+    display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+
+    top: 0;
+
+    right: -100%;
+
+    width: 300px;
+
+    max-width: 85%;
+
+    height: 100vh;
+
+    background: white;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    transition: right 0.45s ease;
+
+    z-index: 999;
+
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 20px;
+  }
+
+  .mobile-donate {
+    display: block;
+
+    margin-top: 20px;
+
+    background: #ffc107;
+
+    color: #013585;
+
+    padding: 14px 35px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+  .nav-container {
+    padding: 0 20px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .nav-links {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-box {
+  background: white;
+
+  color: #333;
+
+  padding: 40px;
+
+  border-radius: 12px;
+}
+
+/* =========================================================
+   CONTACT ITEMS
+========================================================= */
+
+.contact-item {
+  margin-bottom: 30px;
+}
+
+.contact-item h4 {
+  color: #2c5aa0;
+
+  margin-bottom: 12px;
+}
+
+.contact-item p,
+.contact-item a {
+  font-size: 14px;
+}
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+input,
+textarea {
+  padding: 12px 16px;
+
+  border: 2px solid #e0e0e0;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  font-family: inherit;
+
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2c5aa0;
+
+  box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.1);
+
+  outline: none;
+}
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+.form-submit {
+  background: #2c5aa0;
+
+  color: white;
+
+  padding: 14px 30px;
+
+  border-radius: 6px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+.form-submit:hover {
+  background: #1f4577;
+}

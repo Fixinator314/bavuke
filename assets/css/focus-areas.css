@@ -1,0 +1,578 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   ABOUT — FOCUS AREAS
+========================================================= */
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.focus-areas {
+  position: relative;
+
+  width: 100%;
+
+  height: 100vh;
+
+  overflow: hidden;
+
+  background: #f4f4f1;
+
+  color: #013585;
+}
+
+/* =========================================================
+   INTRO PANEL
+========================================================= */
+
+.focus-intro {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 10;
+
+  width: 100vw;
+
+  height: 100vh;
+
+  background: #f4f4f1;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 8vw;
+}
+
+/* =========================================================
+   INTRO NUMBER
+========================================================= */
+
+.focus-intro-number {
+  position: absolute;
+
+  top: 45px;
+
+  right: 45px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: rgba(1, 53, 133, 0.4);
+}
+
+/* =========================================================
+   INTRO CONTENT
+========================================================= */
+
+.focus-intro-content {
+  max-width: 750px;
+}
+
+.focus-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 30px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.focus-eyebrow::before {
+  content: "";
+
+  width: 40px;
+
+  height: 3px;
+
+  background: #ffc107;
+}
+
+.focus-intro-content h2 {
+  margin: 0;
+
+  font-size: clamp(90px, 12vw, 180px);
+
+  line-height: 0.78;
+
+  letter-spacing: -10px;
+
+  font-weight: 800;
+}
+
+.focus-intro-content h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+.focus-intro-content p {
+  max-width: 520px;
+
+  margin-top: 40px;
+
+  color: rgba(1, 53, 133, 0.65);
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   SCROLL HINT
+========================================================= */
+
+.focus-scroll-hint {
+  position: absolute;
+
+  left: 8vw;
+
+  bottom: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: rgba(1, 53, 133, 0.5);
+}
+
+.focus-scroll-arrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 42px;
+
+  height: 42px;
+
+  border: 1px solid rgba(1, 53, 133, 0.3);
+
+  border-radius: 50%;
+
+  font-size: 18px;
+}
+
+/* =========================================================
+   HORIZONTAL TRACK
+========================================================= */
+
+.focus-track {
+  position: absolute;
+
+  top: 0;
+
+  left: 100vw;
+
+  display: flex;
+
+  height: 100vh;
+
+  width: max-content;
+}
+
+/* =========================================================
+   PANELS
+========================================================= */
+
+.focus-panel {
+  position: relative;
+
+  width: 100vw;
+
+  height: 100vh;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.focus-education {
+  background: #356ec4;
+}
+
+/* =========================================================
+   HEALTH
+========================================================= */
+
+.focus-health {
+  background: #174f9e;
+}
+
+/* =========================================================
+   COMMUNITY
+========================================================= */
+
+.focus-community {
+  background: #013585;
+}
+
+/* =========================================================
+   PANEL NUMBER
+========================================================= */
+
+.focus-panel-number {
+  position: absolute;
+
+  top: 45px;
+
+  right: 45px;
+
+  z-index: 4;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* =========================================================
+   PANEL CONTENT
+========================================================= */
+
+.focus-panel-content {
+  position: relative;
+
+  z-index: 3;
+
+  width: min(1000px, calc(100% - 160px));
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+/* =========================================================
+   PANEL LABEL
+========================================================= */
+
+.focus-panel-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.focus-panel-label::before {
+  content: "";
+
+  width: 40px;
+
+  height: 3px;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   PANEL HEADING
+========================================================= */
+
+.focus-panel-content h3 {
+  max-width: 800px;
+
+  margin: 0;
+
+  font-size: clamp(70px, 9vw, 140px);
+
+  line-height: 0.8;
+
+  letter-spacing: -8px;
+
+  font-weight: 800;
+}
+
+.focus-panel-content h3 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.focus-panel-content > p {
+  max-width: 520px;
+
+  margin: 35px 0 45px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   ITEMS
+========================================================= */
+
+.focus-items {
+  width: min(700px, 100%);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 0 40px;
+}
+
+.focus-item {
+  display: grid;
+
+  grid-template-columns:
+    32px
+    1fr;
+
+  gap: 15px;
+
+  padding: 20px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.focus-item > span {
+  color: #ffc107;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.focus-item strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.focus-item p {
+  margin: 8px 0 0;
+
+  color: rgba(255, 255, 255, 0.58);
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+/* =========================================================
+   GIANT BACKGROUND WORD
+========================================================= */
+
+.focus-panel-word {
+  position: absolute;
+
+  right: -5%;
+
+  bottom: -10%;
+
+  z-index: 1;
+
+  font-size: clamp(180px, 25vw, 430px);
+
+  line-height: 0.7;
+
+  font-weight: 800;
+
+  letter-spacing: -20px;
+
+  white-space: nowrap;
+
+  color: rgba(255, 255, 255, 0.045);
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.focus-progress {
+  position: absolute;
+
+  right: 45px;
+
+  bottom: 45px;
+
+  z-index: 20;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.focus-progress-bar {
+  width: 100px;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.25);
+
+  overflow: hidden;
+}
+
+.focus-progress-bar span {
+  display: block;
+
+  width: 33.33%;
+
+  height: 100%;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .focus-areas {
+    height: auto;
+
+    overflow: visible;
+  }
+
+  .focus-intro {
+    position: relative;
+
+    width: 100%;
+
+    height: 85svh;
+
+    min-height: 600px;
+
+    padding: 0 24px;
+  }
+
+  .focus-intro-number {
+    top: 30px;
+
+    right: 24px;
+  }
+
+  .focus-intro-content h2 {
+    font-size: 20vw;
+
+    letter-spacing: -5px;
+  }
+
+  .focus-intro-content p {
+    font-size: 15px;
+  }
+
+  .focus-scroll-hint {
+    left: 24px;
+
+    bottom: 35px;
+  }
+
+  .focus-track {
+    position: relative;
+
+    top: auto;
+
+    left: auto;
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+  }
+
+  .focus-panel {
+    width: 100%;
+
+    height: auto;
+
+    min-height: 750px;
+  }
+
+  .focus-panel-content {
+    width: calc(100% - 48px);
+
+    padding: 100px 0;
+  }
+
+  .focus-panel-content h3 {
+    font-size: 18vw;
+
+    letter-spacing: -5px;
+  }
+
+  .focus-items {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-panel-number {
+    top: 30px;
+
+    right: 24px;
+  }
+
+  .focus-progress {
+    display: none;
+  }
+}

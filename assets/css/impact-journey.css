@@ -1,0 +1,510 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   IMPACT JOURNEY
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.impact-journey {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  color: #013585;
+}
+
+/* =========================================================
+   BACKGROUND WORD
+========================================================= */
+
+.impact-journey-bg {
+  position: absolute;
+
+  top: 5%;
+
+  right: -8%;
+
+  z-index: 0;
+
+  font-size: clamp(220px, 35vw, 600px);
+
+  font-weight: 800;
+
+  line-height: 0.8;
+
+  letter-spacing: -20px;
+
+  color: rgba(1, 53, 133, 0.035);
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.impact-journey-heading {
+  position: relative;
+  z-index: 5;
+  width: min(1100px, calc(100% - 80px));
+  margin: 0 auto;
+  padding-top: 140px;
+  padding-bottom: 110px;
+}
+
+.impact-journey-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #013585;
+}
+
+.impact-journey-eyebrow::before {
+  content: "";
+
+  width: 38px;
+
+  height: 3px;
+
+  background: #ffc107;
+}
+
+.impact-journey-heading h2 {
+  margin: 25px 0 0;
+
+  font-size: clamp(52px, 7vw, 100px);
+
+  line-height: 0.9;
+
+  letter-spacing: -5px;
+
+  color: #013585;
+}
+
+.impact-journey-heading h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+.impact-journey-heading p {
+  max-width: 450px;
+  margin-top: 25px;
+  color: #666;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   HORIZONTAL TRACK
+========================================================= */
+
+.impact-journey-track {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   INNER
+========================================================= */
+
+.impact-journey-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding-left: 8vw;
+  padding-right: 15vw;
+  will-change: transform;
+}
+
+/* =========================================================
+   STEP
+========================================================= */
+
+.impact-step {
+  position: relative;
+
+  flex: 0 0 55vw;
+
+  width: 55vw;
+
+  min-width: 600px;
+
+  height: 55vh;
+
+  min-height: 390px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 60px;
+}
+
+/* =========================================================
+   STEP NUMBER
+========================================================= */
+
+.impact-step-number {
+  position: absolute;
+
+  top: 20px;
+
+  left: 60px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: rgba(1, 53, 133, 0.45);
+}
+
+/* =========================================================
+   ICON / CONNECTION
+========================================================= */
+
+.impact-step-icon {
+  position: absolute;
+
+  right: -28px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 5;
+
+  width: 56px;
+
+  height: 56px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 2px solid #ffc107;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #013585;
+
+  font-size: 25px;
+}
+
+/* =========================================================
+   STEP CONTENT
+========================================================= */
+
+.impact-step-content {
+  max-width: 570px;
+}
+
+.impact-step-content > span {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: #013585;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.impact-step-content h3 {
+  margin: 0;
+
+  color: #013585;
+
+  font-size: clamp(65px, 8vw, 120px);
+
+  line-height: 0.85;
+
+  letter-spacing: -6px;
+}
+
+.impact-step-content p {
+  max-width: 500px;
+
+  margin-top: 35px;
+
+  color: #555;
+
+  font-size: 17px;
+
+  line-height: 1.75;
+}
+
+/* =========================================================
+   STEP ACCENTS
+========================================================= */
+
+.impact-step-01 {
+  border-top: 1px solid rgba(1, 53, 133, 0.15);
+
+  border-bottom: 1px solid rgba(1, 53, 133, 0.15);
+}
+
+.impact-step-02 {
+  background: #f4f5f6;
+}
+
+.impact-step-03 {
+  background: #013585;
+}
+
+.impact-step-03 .impact-step-number,
+.impact-step-03 .impact-step-content > span,
+.impact-step-03 .impact-step-content h3,
+.impact-step-03 .impact-step-content p {
+  color: #ffffff;
+}
+
+.impact-step-03 .impact-step-icon {
+  background: #013585;
+
+  color: #ffffff;
+}
+
+.impact-step-04 {
+  background: #ffc107;
+}
+
+.impact-step-04 .impact-step-content > span,
+.impact-step-04 .impact-step-content h3,
+.impact-step-04 .impact-step-content p {
+  color: #013585;
+}
+
+.impact-step-04 .impact-step-icon {
+  border-color: #013585;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   FINAL
+========================================================= */
+
+.impact-step-final {
+  width: 60vw;
+
+  min-width: 650px;
+
+  justify-content: center;
+
+  padding: 0;
+}
+
+.impact-final-circle {
+  width: clamp(300px, 30vw, 500px);
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: #013585;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  box-shadow: 0 30px 80px rgba(1, 53, 133, 0.15);
+}
+
+.impact-final-circle span {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+.impact-final-circle strong {
+  margin-top: 10px;
+
+  color: #ffc107;
+
+  font-size: clamp(35px, 5vw, 70px);
+
+  line-height: 0.9;
+}
+
+/* =========================================================
+   SCROLL INDICATOR
+========================================================= */
+
+.impact-journey-scroll {
+  position: absolute;
+
+  right: 40px;
+
+  bottom: 40px;
+
+  z-index: 10;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #013585;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.impact-scroll-line {
+  width: 60px;
+
+  height: 2px;
+
+  background: rgba(1, 53, 133, 0.15);
+
+  overflow: hidden;
+}
+
+.impact-scroll-line div {
+  width: 35%;
+
+  height: 100%;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .impact-journey {
+    min-height: auto;
+
+    padding: 100px 0;
+  }
+
+  .impact-journey-heading {
+    position: relative;
+
+    top: auto;
+
+    left: auto;
+
+    width: calc(100% - 48px);
+
+    margin: 0 auto 70px;
+  }
+
+  .impact-journey-heading h2 {
+    font-size: clamp(48px, 14vw, 75px);
+
+    letter-spacing: -3px;
+  }
+
+  .impact-journey-track {
+    position: relative;
+
+    height: auto;
+
+    min-height: auto;
+
+    overflow: visible;
+  }
+
+  .impact-journey-inner {
+    position: relative;
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    padding: 0 24px;
+  }
+
+  .impact-step {
+    width: 100%;
+
+    min-width: 0;
+
+    height: auto;
+
+    min-height: 400px;
+
+    margin-bottom: 20px;
+
+    padding: 60px 30px;
+  }
+
+  .impact-step-number {
+    left: 30px;
+  }
+
+  .impact-step-icon {
+    display: none;
+  }
+
+  .impact-step-content h3 {
+    font-size: clamp(55px, 15vw, 80px);
+
+    letter-spacing: -3px;
+  }
+
+  .impact-step-final {
+    width: 100%;
+
+    min-width: 0;
+
+    min-height: 400px;
+  }
+
+  .impact-final-circle {
+    width: 300px;
+  }
+
+  .impact-journey-scroll {
+    display: none;
+  }
+}

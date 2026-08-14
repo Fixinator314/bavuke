@@ -1,0 +1,364 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   UBUNTU SECTION
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.ubuntu-section {
+  position: relative;
+
+  min-height: 100vh;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #fafafa;
+
+  color: #013585;
+
+  padding: 140px 40px;
+}
+
+/* =========================================================
+   LARGE BACKGROUND TEXT
+========================================================= */
+
+.ubuntu-background-text {
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: clamp(180px, 30vw, 520px);
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -15px;
+
+  color: rgba(1, 53, 133, 0.035);
+
+  white-space: nowrap;
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.ubuntu-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(900px, 100%);
+
+  text-align: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.ubuntu-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #013585;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 30px;
+
+  opacity: 0;
+}
+
+/* =========================================================
+   EYEBROW LINES
+========================================================= */
+
+.ubuntu-eyebrow::before,
+.ubuntu-eyebrow::after {
+  content: "";
+
+  width: 35px;
+
+  height: 2px;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   UBUNTU SYMBOL
+========================================================= */
+
+.ubuntu-symbol {
+  position: relative;
+
+  width: 70px;
+
+  height: 70px;
+
+  margin-bottom: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* =========================================================
+   SYMBOL CIRCLE
+========================================================= */
+
+.ubuntu-symbol-circle {
+  content: "";
+
+  position: absolute;
+
+  width: 48px;
+
+  height: 48px;
+
+  border: 2px solid #ffc107;
+
+  border-radius: 50%;
+
+  opacity: 0;
+
+  transform: scale(0.5);
+}
+
+/* =========================================================
+   SYMBOL DOTS
+========================================================= */
+
+.ubuntu-symbol span {
+  position: absolute;
+
+  width: 8px;
+
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #013585;
+
+  opacity: 0;
+}
+
+/* Individual positions */
+
+.ubuntu-symbol span:nth-child(1) {
+  transform: translateY(-26px);
+}
+
+.ubuntu-symbol span:nth-child(2) {
+  transform: translateX(-23px) translateY(13px);
+}
+
+.ubuntu-symbol span:nth-child(3) {
+  transform: translateX(23px) translateY(13px);
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.ubuntu-title {
+  margin: 0;
+
+  color: #013585;
+
+  font-size: clamp(58px, 9vw, 125px);
+
+  line-height: 0.9;
+
+  letter-spacing: -5px;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  opacity: 0;
+}
+
+/* =========================================================
+   TITLE SECOND LINE
+========================================================= */
+
+.ubuntu-title span {
+  display: block;
+
+  color: #ffc107;
+}
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.ubuntu-divider {
+  width: 0;
+
+  height: 4px;
+
+  background: #ffc107;
+
+  margin: 42px 0 28px;
+}
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.ubuntu-quote {
+  margin: 0;
+
+  font-size: clamp(25px, 4vw, 42px);
+
+  line-height: 1.2;
+
+  font-weight: 600;
+
+  color: #1a3a5c;
+
+  opacity: 0;
+
+  transform: translateY(25px);
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.ubuntu-description {
+  max-width: 650px;
+
+  margin: 22px auto 0;
+
+  color: #555;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  opacity: 0;
+
+  transform: translateY(25px);
+}
+
+/* =========================================================
+   SECTION NUMBER
+========================================================= */
+
+.ubuntu-scroll-number {
+  position: absolute;
+
+  right: 50px;
+
+  bottom: 40px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: rgba(1, 53, 133, 0.4);
+
+  opacity: 0;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .ubuntu-section {
+    min-height: 100svh;
+
+    padding: 110px 24px;
+  }
+
+  .ubuntu-background-text {
+    font-size: 35vw;
+
+    letter-spacing: -5px;
+  }
+
+  .ubuntu-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+  .ubuntu-eyebrow::before,
+  .ubuntu-eyebrow::after {
+    width: 20px;
+  }
+
+  .ubuntu-symbol {
+    width: 60px;
+
+    height: 60px;
+
+    margin-bottom: 25px;
+  }
+
+  .ubuntu-title {
+    font-size: clamp(52px, 16vw, 80px);
+
+    letter-spacing: -3px;
+  }
+
+  .ubuntu-divider {
+    margin: 30px 0 24px;
+  }
+
+  .ubuntu-quote {
+    font-size: 25px;
+  }
+
+  .ubuntu-description {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .ubuntu-scroll-number {
+    right: 24px;
+
+    bottom: 25px;
+  }
+}

@@ -1,8 +1,60 @@
-/* RESET & BASE */
+/* =========================================================
+   BAVUKE FOUNDATION
+   MASTER STYLESHEET
+========================================================= */
+
+/* =========================================================
+   01. GLOBAL
+========================================================= */
+
+@import url("./assets/css/navbar.css");
+@import url("./assets/css/hero.css");
+@import url("./assets/css/ubuntu.css");
+@import url("./assets/css/about.css");
+@import url("./assets/css/programmes.css");
+@import url("./assets/css/impact-journey.css");
+@import url("./assets/css/give.css");
+@import url("./assets/css/closing.css");
+
+/* =========================================================
+   02. HOME
+========================================================= */
+
+@import url("./assets/css/sections.css");
+@import url("./assets/css/cards.css");
+@import url("./assets/css/contact.css");
+@import url("./assets/css/footer.css");
+
+/* =========================================================
+   SHARED PAGES
+========================================================= */
+@import url("./assets/css/inner-page-hero.css");
+
+/* =========================================================
+   02. ABOUT
+========================================================= */
+@import url("./assets/css/about-story.css");
+@import url("./assets/css/vision-mission.css");
+@import url("./assets/css/focus-areas.css");
+@import url("./assets/css/change-model.css");
+@import url("./assets/css/ripple-effect.css");
+
+/* =========================================================
+   RESET
+========================================================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* =========================================================
+   BASE
+========================================================= */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,10 +63,19 @@ body {
     -apple-system,
     BlinkMacSystemFont,
     sans-serif;
+
   line-height: 1.6;
   color: #333;
   background: #fafafa;
 }
+
+body.menu-open {
+  overflow: hidden;
+}
+
+/* =========================================================
+   LINKS
+========================================================= */
 
 a {
   color: #2c5aa0;
@@ -25,14 +86,21 @@ a:hover {
   text-decoration: underline;
 }
 
+/* =========================================================
+   BUTTONS
+========================================================= */
+
 button {
   cursor: pointer;
   border: none;
-  transition: all 0.3s;
   font-family: inherit;
+  transition: all 0.3s ease;
 }
 
-/* TYPOGRAPHY */
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
 h1 {
   font-size: 48px;
   font-weight: 700;
@@ -61,75 +129,27 @@ p {
   margin-bottom: 15px;
 }
 
-/* NAVBAR */
-/* nav {
-  position: sticky;
-  top: 0;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  z-index: 1000;
-}
+/* =========================================================
+   CONTAINER
+========================================================= */
 
-nav > div {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-} */
-
-.logo {
-  height: 100px;
-  width: auto;
-  display: flex;
-  align-items: center;
-}
-.logo img {
-  height: 100%;
-}
-
-/* .nav-links {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-
-.nav-links a {
-  color: #333;
-  font-size: 15px;
-  font-weight: 500;
-} */
-
-.donate-btn {
-  background: #ffc107;
-  color: #1a3a5c;
-  padding: 12px 30px;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 4px;
-}
-
-.donate-btn:hover {
-  background: #ffb300;
-}
-
-/* LAYOUT */
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* =========================================================
+   SECTION
+========================================================= */
 
 section {
   padding: 80px 40px;
 }
 
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-}
+/* =========================================================
+   GRID
+========================================================= */
 
 .grid-2 {
   display: grid;
@@ -138,585 +158,19 @@ section {
   align-items: center;
 }
 
-/* HERO SECTION */
-.hero {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./Bavuke1.png") center/cover;
-  color: white;
-  text-align: center;
-  min-height: 700px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.hero-content {
-  max-width: 800px;
-  position: relative;
-  z-index: 1;
-}
-
-.hero-subtitle {
-  font-size: 22px;
-  margin: 30px 0;
-  opacity: 0.95;
-}
-
-.hero-tagline {
-  font-size: 16px;
-  opacity: 0.85;
-  font-style: italic;
-}
-
-.hero-buttons {
-  margin-top: 40px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn-primary {
-  background: #ffc107;
-  color: #1a3a5c;
-  padding: 16px 45px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 4px;
-  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
-}
-
-.btn-secondary {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
-  padding: 16px 45px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 4px;
-}
-
-.btn-primary:hover,
-.btn-secondary:hover {
-  opacity: 0.9;
-}
-
-/* =======================
-   NAVBAR
-========================== */
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: white;
-  z-index: 1000;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-.nav-container {
-  max-width: 1400px;
-  margin: auto;
-  height: 80px;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo img {
-  height: 60px;
-}
-
-.nav-links {
-  display: flex;
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  align-items: center;
 }
 
-.nav-links a {
-  color: #333;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: #ffc107;
-}
-
-.donate-btn {
-  background: #ffc107;
-  color: #013585;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 8px;
-  font-weight: 700;
-}
-
-/* =======================
-   HAMBURGER
-========================== */
-
-.menu-toggle {
-  display: none;
-  width: 35px;
-  height: 45px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  position: relative;
-  z-index: 1002;
-}
-
-.menu-toggle span {
-  position: absolute;
-
-  left: 0;
-
-  width: 100%;
-  height: 4px;
-
-  background: #ffc107;
-
-  border-radius: 100px;
-
-  transition: 0.35s;
-}
-
-.menu-toggle span:nth-child(1) {
-  top: 8px;
-}
-
-.menu-toggle span:nth-child(2) {
-  top: 20px;
-}
-
-.menu-toggle span:nth-child(3) {
-  top: 32px;
-}
-
-.menu-toggle.active span:nth-child(1) {
-  transform: rotate(45deg);
-
-  top: 20px;
-}
-
-.menu-toggle.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg);
-
-  top: 20px;
-}
-
-/* =======================
-   OVERLAY
-========================== */
-
-.nav-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.35s;
-  z-index: 998;
-}
-
-.nav-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* =======================
-   MOBILE
-========================== */
-
-.mobile-donate {
-  display: none;
-}
+/* =========================================================
+   MOBILE GLOBAL
+========================================================= */
 
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .donate-btn {
-    display: none;
-  }
-
-  .nav-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 300px;
-    max-width: 85%;
-    height: 100vh;
-    background: white;
-    flex-direction: column;
-    justify-content: center;
-    gap: 35px;
-    transition: 0.45s ease;
-    z-index: 999;
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.08);
-  }
-
-  .nav-links.active {
-    right: 0;
-  }
-
-  .nav-links a {
-    font-size: 20px;
-  }
-
-  .mobile-donate {
-    display: block;
-    margin-top: 20px;
-    background: #ffc107;
-    color: #013585;
-    border: none;
-    padding: 14px 35px;
-    border-radius: 8px;
-    font-weight: bold;
-  }
-}
-
-@media (max-width: 430px) {
-  .nav-container {
-    padding: 0 20px;
-  }
-
-  .logo img {
-    height: 50px;
-  }
-
-  .nav-links {
-    width: 100%;
-  }
-}
-
-/* SECTION STYLES */
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.yellow-line {
-  display: inline-block;
-  height: 4px;
-  background: #ffc107;
-  width: 60px;
-  margin: 15px auto 30px;
-}
-
-.bg-light {
-  background: #f5f5f5;
-}
-
-.bg-blue {
-  background: linear-gradient(135deg, #2c5aa0 0%, #1a3a5c 100%);
-  color: white;
-}
-
-.bg-blue h2,
-.bg-blue h3,
-.bg-blue h4 {
-  color: white;
-}
-
-/* CARDS */
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 40px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  transition:
-    transform 0.3s,
-    box-shadow 0.3s;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.card-icon,
-.card > .fa,
-.card > .fa-solid {
-  font-size: 50px;
-  margin-bottom: 20px;
-  color: #013585;
-
-  line-height: 1;
-  display: inline-block;
-}
-
-.card-icon i {
-  font-size: inherit;
-  line-height: 1;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-}
-
-.pillar-icon {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-
-.mission-box {
-  background: #2c5aa0;
-  color: white;
-  padding: 30px;
-  border-radius: 8px;
-  margin-top: 25px;
-}
-
-.mission-box p {
-  margin: 0;
-}
-
-.vision-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-}
-
-.vision-placeholder {
-  background: linear-gradient(135deg, #e8f0f7 0%, #f0f4f9 100%);
-  padding: 10px;
-  border-radius: 12px;
-  width: 100%;
-  text-align: center;
-  color: #999;
-  font-size: 14px;
-}
-.vision-placeholder img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-
-/* STATISTICS */
-.stat {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.stat-number {
-  font-size: 54px;
-  font-weight: 700;
-  color: #ffc107;
-  margin-bottom: 12px;
-}
-
-.stat p {
-  font-size: 16px;
-  opacity: 0.9;
-}
-
-/* TESTIMONIALS */
-.testimonial {
-  border-left: 6px solid #ffc107;
-}
-
-.testimonial p:first-child {
-  font-size: 15px;
-  color: #666;
-  margin-bottom: 20px;
-  font-style: italic;
-}
-
-.testimonial-name {
-  font-weight: 700;
-  color: #2c5aa0;
-  margin-top: 12px !important;
-  margin-bottom: 8px !important;
-}
-
-.testimonial-role {
-  font-size: 13px;
-  color: #999;
-  margin: 0 !important;
-}
-
-/* CTA CARDS */
-.cta-card {
-  text-align: center;
-  border-top: 6px solid #2c5aa0;
-}
-
-.cta-card:nth-child(2) {
-  border-top-color: #4caf50;
-}
-
-.cta-card:nth-child(3) {
-  border-top-color: #ff9800;
-}
-
-.cta-icon {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.cta-link {
-  display: inline-block;
-  padding: 12px 35px;
-  border-radius: 4px;
-  font-weight: 600;
-  margin-top: 15px;
-  text-decoration: none;
-  color: white;
-}
-
-.donate-link {
-  background: #ffc107;
-  color: #1a3a5c;
-}
-
-.volunteer-link {
-  background: #4caf50;
-}
-
-.partner-link {
-  background: #ff9800;
-}
-
-.cta-link:hover {
-  opacity: 0.9;
-}
-
-/* CONTACT SECTION */
-.contact-box {
-  background: white;
-  color: #333;
-  padding: 40px;
-  border-radius: 12px;
-}
-
-.bg-blue .contact-box {
-  background: white;
-  color: #333;
-}
-
-.contact-item {
-  margin-bottom: 30px;
-}
-
-.contact-item h4 {
-  color: #2c5aa0;
-  margin-bottom: 12px;
-}
-
-.contact-item p,
-.contact-item a {
-  font-size: 14px;
-}
-
-/* CONTACT FORM */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-input,
-textarea {
-  padding: 12px 16px;
-  border: 2px solid #e0e0e0;
-  border-radius: 6px;
-  font-size: 14px;
-  font-family: inherit;
-  transition:
-    border-color 0.3s,
-    box-shadow 0.3s;
-}
-
-input:focus,
-textarea:focus {
-  border-color: #2c5aa0;
-  box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.1);
-  outline: none;
-}
-
-.form-submit {
-  background: #2c5aa0;
-  color: white;
-  padding: 14px 30px;
-  border-radius: 6px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.form-submit:hover {
-  background: #1f4577;
-}
-
-/* FOOTER */
-footer {
-  background: #1a3a5c;
-  color: white;
-  padding: 60px 40px 30px;
-}
-
-footer h3,
-footer h4 {
-  color: white;
-  margin-bottom: 15px;
-}
-
-footer p {
-  font-size: 14px;
-  opacity: 0.85;
-}
-
-footer ul {
-  list-style: none;
-}
-
-footer li {
-  margin-bottom: 8px;
-}
-
-footer a {
-  color: #ffc107;
-  opacity: 0.8;
-  font-size: 14px;
-}
-
-footer a:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 20px;
-  text-align: center;
-  font-size: 13px;
-  opacity: 0.7;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .grid-3,
-  .grid-2 {
-    grid-template-columns: 1fr;
-  }
-
   section {
-    padding: 40px 20px;
+    padding: 60px 20px;
   }
 
   h1 {
@@ -727,31 +181,8 @@ footer a:hover {
     font-size: 28px;
   }
 
-  .hero {
-    min-height: 500px;
-    padding: 80px 20px;
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
   }
-
-  .hero-subtitle {
-    font-size: 18px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-  }
-
-  .btn-primary,
-  .btn-secondary {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .donate-btn {
-    display: none;
-  }
-}
-
-body.menu-open {
-  overflow: hidden;
 }
