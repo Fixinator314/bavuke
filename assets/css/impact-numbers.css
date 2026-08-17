@@ -1,0 +1,442 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   IMPACT — MEASURING THE DIFFERENCE
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.impact-numbers {
+  position: relative;
+
+  min-height: 900px;
+
+  overflow: hidden;
+
+  padding: 150px 0;
+
+  background: #013585;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   BACKGROUND WORD
+========================================================= */
+
+.impact-numbers-bg {
+  position: absolute;
+
+  right: -8%;
+
+  bottom: -4%;
+
+  z-index: 0;
+
+  font-size: clamp(250px, 34vw, 620px);
+
+  line-height: 0.7;
+
+  font-weight: 800;
+
+  letter-spacing: -25px;
+
+  color: rgba(255, 255, 255, 0.045);
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.impact-numbers-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1250px, calc(100% - 80px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.impact-numbers-header {
+  max-width: 760px;
+
+  margin-bottom: 80px;
+}
+
+.impact-numbers-header .impact-section-eyebrow {
+  color: #ffffff;
+}
+
+.impact-numbers-header h2 {
+  margin: 0;
+
+  font-size: clamp(65px, 8vw, 110px);
+
+  line-height: 0.84;
+
+  letter-spacing: -6px;
+
+  font-weight: 800;
+}
+
+.impact-numbers-header h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+.impact-numbers-header p {
+  max-width: 540px;
+
+  margin-top: 35px;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.impact-numbers-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* =========================================================
+   STAT CARD
+========================================================= */
+
+.impact-number-card {
+  position: relative;
+
+  min-height: 360px;
+
+  padding: 35px 30px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.impact-number-card:last-child {
+  border-right: none;
+}
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.impact-number-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.impact-number-top > span {
+  color: #ffc107;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.impact-number-top i {
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 19px;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.impact-number {
+  margin-top: 70px;
+
+  color: #ffffff;
+
+  font-size: clamp(55px, 6vw, 85px);
+
+  line-height: 0.9;
+
+  letter-spacing: -5px;
+
+  font-weight: 800;
+}
+
+.impact-number::after {
+  content: attr(data-suffix);
+
+  color: #ffc107;
+}
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.impact-number-card h3 {
+  margin-top: 20px;
+
+  font-size: 20px;
+
+  line-height: 1.1;
+
+  letter-spacing: -0.5px;
+}
+
+.impact-number-card p {
+  max-width: 220px;
+
+  margin-top: 14px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 12px;
+
+  line-height: 1.65;
+}
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.impact-numbers-bottom {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    auto
+    100px;
+
+  align-items: center;
+
+  gap: 30px;
+
+  margin-top: 55px;
+}
+
+.impact-numbers-line {
+  width: 100%;
+
+  height: 1px;
+
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.impact-numbers-line span {
+  display: block;
+
+  width: 0%;
+
+  height: 100%;
+
+  background: #ffc107;
+}
+
+.impact-numbers-bottom p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.impact-numbers-mark {
+  justify-self: end;
+
+  color: rgba(255, 255, 255, 0.3);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .impact-numbers {
+    min-height: auto;
+
+    padding: 120px 0;
+  }
+
+  .impact-numbers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impact-number-card:nth-child(2) {
+    border-right: none;
+  }
+
+  .impact-number-card:nth-child(1),
+  .impact-number-card:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .impact-number {
+    margin-top: 55px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .impact-numbers {
+    padding: 90px 0;
+  }
+
+  .impact-numbers-container {
+    width: calc(100% - 48px);
+  }
+
+  .impact-numbers-bg {
+    right: -18%;
+
+    bottom: 5%;
+
+    font-size: 60vw;
+
+    letter-spacing: -10px;
+  }
+
+  .impact-numbers-header {
+    margin-bottom: 55px;
+  }
+
+  .impact-numbers-header h2 {
+    font-size: clamp(55px, 17vw, 85px);
+
+    letter-spacing: -4px;
+  }
+
+  .impact-numbers-header p {
+    margin-top: 25px;
+
+    font-size: 14px;
+  }
+
+  /* ---------------------------------------------
+     STAT GRID
+  --------------------------------------------- */
+
+  .impact-numbers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-number-card {
+    min-height: 270px;
+
+    padding: 30px 25px;
+
+    border-right: none;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .impact-number-card:last-child {
+    border-bottom: none;
+  }
+
+  .impact-number {
+    margin-top: 45px;
+
+    font-size: 65px;
+  }
+
+  .impact-number-card h3 {
+    font-size: 21px;
+  }
+
+  .impact-number-card p {
+    max-width: 280px;
+  }
+
+  /* ---------------------------------------------
+     BOTTOM
+  --------------------------------------------- */
+
+  .impact-numbers-bottom {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    margin-top: 40px;
+  }
+
+  .impact-numbers-line {
+    order: 1;
+  }
+
+  .impact-numbers-bottom p {
+    order: 2;
+
+    font-size: 10px;
+  }
+
+  .impact-numbers-mark {
+    order: 3;
+
+    justify-self: start;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+  .impact-numbers {
+    padding: 75px 0;
+  }
+
+  .impact-numbers-container {
+    width: calc(100% - 36px);
+  }
+
+  .impact-number-card {
+    min-height: 250px;
+
+    padding: 25px 20px;
+  }
+
+  .impact-number {
+    font-size: 58px;
+  }
+
+  .impact-number-card h3 {
+    font-size: 19px;
+  }
+}

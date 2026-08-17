@@ -1,0 +1,641 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   HOMEPAGE IMPACT JOURNEY
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.journey-home {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  color: #013585;
+}
+
+/* =========================================================
+   BACKGROUND WORD
+========================================================= */
+
+.journey-home-bg {
+  position: absolute;
+
+  top: 5%;
+
+  right: -8%;
+
+  z-index: 0;
+
+  font-size: clamp(220px, 35vw, 600px);
+
+  font-weight: 800;
+
+  line-height: 0.8;
+
+  letter-spacing: -20px;
+
+  color: rgba(1, 53, 133, 0.035);
+
+  pointer-events: none;
+
+  user-select: none;
+
+  will-change: transform;
+}
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.journey-home-heading {
+  position: relative;
+
+  z-index: 5;
+
+  width: min(1100px, calc(100% - 80px));
+
+  margin: 0 auto;
+
+  padding-top: 140px;
+
+  padding-bottom: 80px;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.journey-home-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #013585;
+}
+
+.journey-home-eyebrow::before {
+  content: "";
+
+  width: 38px;
+
+  height: 3px;
+
+  flex-shrink: 0;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.journey-home-heading h2 {
+  max-width: 1000px;
+
+  margin: 25px 0 0;
+
+  color: #013585;
+
+  font-size: clamp(52px, 7vw, 100px);
+
+  line-height: 0.9;
+
+  letter-spacing: -5px;
+
+  font-weight: 800;
+}
+
+.journey-home-heading h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.journey-home-heading p {
+  max-width: 450px;
+
+  margin-top: 25px;
+
+  color: #666666;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   HORIZONTAL TRACK
+========================================================= */
+
+.journey-home-track {
+  position: relative;
+
+  width: 100%;
+
+  height: 100vh;
+
+  min-height: 700px;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   HORIZONTAL INNER
+========================================================= */
+
+.journey-home-inner {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  height: 100%;
+
+  width: max-content;
+
+  display: flex;
+
+  align-items: center;
+
+  padding-left: 8vw;
+
+  padding-right: 15vw;
+
+  will-change: transform;
+}
+
+/* =========================================================
+   STEP
+========================================================= */
+
+.journey-home-step {
+  position: relative;
+
+  flex: 0 0 55vw;
+
+  width: 55vw;
+
+  min-width: 600px;
+
+  height: 55vh;
+
+  min-height: 390px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 60px;
+}
+
+/* =========================================================
+   STEP NUMBER
+========================================================= */
+
+.journey-home-step-number {
+  position: absolute;
+
+  top: 20px;
+
+  left: 60px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: rgba(1, 53, 133, 0.45);
+}
+
+/* =========================================================
+   CONNECTION ICON
+========================================================= */
+
+.journey-home-step-icon {
+  position: absolute;
+
+  top: 50%;
+
+  right: -28px;
+
+  z-index: 5;
+
+  width: 56px;
+
+  height: 56px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transform: translateY(-50%);
+
+  border: 2px solid #ffc107;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #013585;
+
+  font-size: 25px;
+}
+
+/* =========================================================
+   STEP CONTENT
+========================================================= */
+
+.journey-home-step-content {
+  max-width: 570px;
+}
+
+.journey-home-step-content > span {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: #013585;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.journey-home-step-content h3 {
+  margin: 0;
+
+  color: #013585;
+
+  font-size: clamp(65px, 8vw, 120px);
+
+  line-height: 0.85;
+
+  letter-spacing: -6px;
+
+  font-weight: 800;
+}
+
+.journey-home-step-content p {
+  max-width: 500px;
+
+  margin-top: 35px;
+
+  color: #555555;
+
+  font-size: 17px;
+
+  line-height: 1.75;
+}
+
+/* =========================================================
+   STEP 01
+========================================================= */
+
+.journey-home-step-01 {
+  border-top: 1px solid rgba(1, 53, 133, 0.15);
+
+  border-bottom: 1px solid rgba(1, 53, 133, 0.15);
+
+  background: #ffffff;
+}
+
+/* =========================================================
+   STEP 02
+========================================================= */
+
+.journey-home-step-02 {
+  background: #f4f5f6;
+}
+
+/* =========================================================
+   STEP 03
+========================================================= */
+
+.journey-home-step-03 {
+  background: #013585;
+}
+
+.journey-home-step-03 .journey-home-step-number,
+.journey-home-step-03 .journey-home-step-content > span,
+.journey-home-step-03 .journey-home-step-content h3,
+.journey-home-step-03 .journey-home-step-content p {
+  color: #ffffff;
+}
+
+.journey-home-step-03 .journey-home-step-icon {
+  background: #013585;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   STEP 04
+========================================================= */
+
+.journey-home-step-04 {
+  background: #ffc107;
+}
+
+.journey-home-step-04 .journey-home-step-content > span,
+.journey-home-step-04 .journey-home-step-content h3,
+.journey-home-step-04 .journey-home-step-content p {
+  color: #013585;
+}
+
+.journey-home-step-04 .journey-home-step-icon {
+  border-color: #013585;
+
+  background: #ffc107;
+
+  color: #013585;
+}
+
+/* =========================================================
+   FINAL STEP
+========================================================= */
+
+.journey-home-final {
+  position: relative;
+
+  flex: 0 0 60vw;
+
+  width: 60vw;
+
+  min-width: 650px;
+
+  height: 55vh;
+
+  min-height: 390px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0;
+}
+
+/* =========================================================
+   FINAL CIRCLE
+========================================================= */
+
+.journey-home-final-circle {
+  width: clamp(300px, 30vw, 500px);
+
+  aspect-ratio: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #013585;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  box-shadow: 0 30px 80px rgba(1, 53, 133, 0.15);
+}
+
+.journey-home-final-circle span {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+.journey-home-final-circle strong {
+  margin-top: 10px;
+
+  color: #ffc107;
+
+  font-size: clamp(35px, 5vw, 70px);
+
+  line-height: 0.9;
+
+  font-weight: 800;
+}
+
+/* =========================================================
+   SCROLL INDICATOR
+========================================================= */
+
+.journey-home-scroll {
+  position: absolute;
+
+  right: 40px;
+
+  bottom: 40px;
+
+  z-index: 10;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #013585;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.journey-home-scroll-line {
+  position: relative;
+
+  width: 60px;
+
+  height: 2px;
+
+  overflow: hidden;
+
+  background: rgba(1, 53, 133, 0.15);
+}
+
+.journey-home-scroll-line div {
+  width: 35%;
+
+  height: 100%;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .journey-home {
+    padding: 90px 0;
+  }
+
+  /* -----------------------------------------------
+     HEADING
+  ------------------------------------------------ */
+
+  .journey-home-heading {
+    width: calc(100% - 48px);
+
+    padding-top: 0;
+
+    padding-bottom: 60px;
+  }
+
+  .journey-home-heading h2 {
+    font-size: clamp(48px, 14vw, 75px);
+
+    letter-spacing: -3px;
+  }
+
+  .journey-home-heading p {
+    font-size: 15px;
+  }
+
+  /* -----------------------------------------------
+     TRACK
+  ------------------------------------------------ */
+
+  .journey-home-track {
+    height: auto;
+
+    min-height: 0;
+
+    overflow: visible;
+  }
+
+  .journey-home-inner {
+    position: relative;
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    padding: 0 24px;
+  }
+
+  /* -----------------------------------------------
+     STEPS
+  ------------------------------------------------ */
+
+  .journey-home-step {
+    width: 100%;
+
+    min-width: 0;
+
+    height: auto;
+
+    min-height: 400px;
+
+    margin-bottom: 20px;
+
+    padding: 60px 30px;
+  }
+
+  .journey-home-step-number {
+    left: 30px;
+  }
+
+  .journey-home-step-icon {
+    display: none;
+  }
+
+  .journey-home-step-content h3 {
+    font-size: clamp(55px, 15vw, 80px);
+
+    letter-spacing: -3px;
+  }
+
+  .journey-home-step-content p {
+    font-size: 15px;
+  }
+
+  /* -----------------------------------------------
+     FINAL
+  ------------------------------------------------ */
+
+  .journey-home-final {
+    width: 100%;
+
+    min-width: 0;
+
+    height: auto;
+
+    min-height: 400px;
+  }
+
+  .journey-home-final-circle {
+    width: 300px;
+  }
+
+  /* -----------------------------------------------
+     SCROLL
+  ------------------------------------------------ */
+
+  .journey-home-scroll {
+    display: none;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+  .journey-home {
+    padding: 75px 0;
+  }
+
+  .journey-home-heading {
+    width: calc(100% - 36px);
+  }
+
+  .journey-home-inner {
+    padding: 0 18px;
+  }
+
+  .journey-home-step {
+    min-height: 380px;
+  }
+
+  .journey-home-step-content h3 {
+    font-size: 36px;
+  }
+}

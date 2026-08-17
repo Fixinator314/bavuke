@@ -1,0 +1,444 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   GET INVOLVED — FINAL CTA
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.next-step-section {
+  position: relative;
+
+  min-height: 800px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 140px 7vw;
+
+  overflow: hidden;
+
+  background: #013585;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.next-step-background {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+.next-step-word {
+  position: absolute;
+
+  left: -4%;
+
+  bottom: -12%;
+
+  font-size: clamp(220px, 34vw, 600px);
+
+  line-height: 0.7;
+
+  font-weight: 800;
+
+  letter-spacing: -25px;
+
+  white-space: nowrap;
+
+  color: rgba(255, 255, 255, 0.045);
+
+  will-change: transform;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.next-step-content {
+  position: relative;
+
+  z-index: 3;
+
+  width: 100%;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.next-step-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+
+  color: #ffc107;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.next-step-eyebrow::before,
+.next-step-eyebrow::after {
+  content: "";
+
+  width: 40px;
+
+  height: 3px;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.next-step-content h2 {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  color: #ffffff;
+
+  font-size: clamp(70px, 10vw, 145px);
+
+  line-height: 0.8;
+
+  letter-spacing: -8px;
+
+  font-weight: 800;
+}
+
+.next-step-content h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.next-step-content > p {
+  max-width: 550px;
+
+  margin: 35px auto 0;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.next-step-actions {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  max-width: 900px;
+
+  margin: 65px auto 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =========================================================
+   ACTION
+========================================================= */
+
+.next-step-action {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    35px
+    1fr
+    25px;
+
+  align-items: center;
+
+  gap: 15px;
+
+  min-height: 90px;
+
+  padding: 0 25px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+.next-step-action:last-child {
+  border-right: none;
+}
+
+.next-step-action:hover {
+  background: #ffc107;
+
+  color: #013585;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.next-step-action-number {
+  color: #ffc107;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.next-step-action:hover .next-step-action-number {
+  color: #013585;
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.next-step-action-text {
+  justify-self: start;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.next-step-action i {
+  justify-self: end;
+
+  font-size: 11px;
+
+  transition: transform 0.35s ease;
+}
+
+.next-step-action:hover i {
+  transform: translateX(6px);
+}
+
+/* =========================================================
+   UBUNTU
+========================================================= */
+
+.next-step-ubuntu {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-top: 70px;
+
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.next-step-ubuntu-line {
+  width: 60px;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* =========================================================
+   CORNER LABEL
+========================================================= */
+
+.next-step-corner {
+  position: absolute;
+
+  right: 35px;
+
+  bottom: 30px;
+
+  z-index: 5;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 5px;
+
+  color: rgba(255, 255, 255, 0.3);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .next-step-section {
+    padding: 120px 5vw;
+  }
+
+  .next-step-content h2 {
+    font-size: clamp(65px, 10vw, 110px);
+  }
+
+  .next-step-actions {
+    max-width: 800px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .next-step-section {
+    min-height: auto;
+
+    padding: 100px 24px;
+  }
+
+  .next-step-content h2 {
+    font-size: clamp(55px, 17vw, 90px);
+
+    letter-spacing: -5px;
+  }
+
+  .next-step-content > p {
+    margin-top: 28px;
+
+    font-size: 14px;
+  }
+
+  /* ---------------------------------------------
+     ACTIONS
+  --------------------------------------------- */
+
+  .next-step-actions {
+    display: flex;
+
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-top: 45px;
+  }
+
+  .next-step-action {
+    min-height: 75px;
+
+    border-right: none;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .next-step-action:last-child {
+    border-bottom: none;
+  }
+
+  /* ---------------------------------------------
+     UBUNTU
+  --------------------------------------------- */
+
+  .next-step-ubuntu {
+    margin-top: 50px;
+
+    font-size: 8px;
+  }
+
+  .next-step-ubuntu-line {
+    width: 35px;
+  }
+
+  /* ---------------------------------------------
+     CORNER
+  --------------------------------------------- */
+
+  .next-step-corner {
+    display: none;
+  }
+
+  /* ---------------------------------------------
+     BACKGROUND
+  --------------------------------------------- */
+
+  .next-step-word {
+    font-size: 55vw;
+
+    letter-spacing: -8px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+  .next-step-section {
+    padding: 80px 18px;
+  }
+
+  .next-step-content h2 {
+    font-size: 55px;
+  }
+}

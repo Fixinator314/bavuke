@@ -1,0 +1,497 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   CONTACT — WAYS TO CONNECT
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.connect-section {
+  position: relative;
+
+  padding: 150px 7vw 100px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  color: #013585;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.connect-container {
+  display: grid;
+
+  grid-template-columns:
+    minmax(320px, 0.75fr)
+    minmax(500px, 1.25fr);
+
+  gap: 100px;
+
+  align-items: start;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.connect-intro {
+  position: sticky;
+
+  top: 140px;
+
+  max-width: 500px;
+}
+
+.connect-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+
+  color: #013585;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.connect-eyebrow::before {
+  content: "";
+
+  width: 40px;
+
+  height: 3px;
+
+  background: #ffc107;
+}
+
+.connect-intro h2 {
+  margin: 0;
+
+  color: #013585;
+
+  font-size: clamp(60px, 7vw, 105px);
+
+  line-height: 0.82;
+
+  letter-spacing: -6px;
+
+  font-weight: 800;
+}
+
+.connect-intro h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+.connect-intro p {
+  max-width: 450px;
+
+  margin-top: 30px;
+
+  color: rgba(1, 53, 133, 0.6);
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.connect-list {
+  display: flex;
+
+  flex-direction: column;
+}
+
+/* =========================================================
+   ITEM
+========================================================= */
+
+.connect-item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    45px
+    60px
+    minmax(0, 1fr)
+    35px;
+
+  gap: 25px;
+
+  align-items: center;
+
+  min-height: 170px;
+
+  padding: 30px;
+
+  border-top: 1px solid rgba(1, 53, 133, 0.15);
+
+  color: #013585;
+
+  text-decoration: none;
+
+  overflow: hidden;
+
+  transition:
+    color 0.45s ease,
+    padding 0.45s ease;
+}
+
+.connect-item:last-child {
+  border-bottom: 1px solid rgba(1, 53, 133, 0.15);
+}
+
+/* =========================================================
+   HOVER BACKGROUND
+========================================================= */
+
+.connect-item::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+
+  background: #013585;
+
+  transform: translateX(-101%);
+
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.connect-item:hover::before {
+  transform: translateX(0);
+}
+
+/* =========================================================
+   KEEP CONTENT ABOVE BACKGROUND
+========================================================= */
+
+.connect-item > * {
+  position: relative;
+
+  z-index: 2;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.connect-item-number {
+  align-self: start;
+
+  padding-top: 5px;
+
+  color: rgba(1, 53, 133, 0.35);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  transition: color 0.4s ease;
+}
+
+.connect-item:hover .connect-item-number {
+  color: #ffc107;
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.connect-item-icon {
+  width: 60px;
+
+  height: 60px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid rgba(1, 53, 133, 0.2);
+
+  color: #013585;
+
+  font-size: 17px;
+
+  transition:
+    color 0.4s ease,
+    border-color 0.4s ease,
+    transform 0.4s ease;
+}
+
+.connect-item:hover .connect-item-icon {
+  color: #ffc107;
+
+  border-color: rgba(255, 255, 255, 0.25);
+
+  transform: rotate(-6deg);
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.connect-item-content span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: rgba(1, 53, 133, 0.4);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  transition: color 0.4s ease;
+}
+
+.connect-item:hover .connect-item-content span {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.connect-item-content h3 {
+  margin: 0;
+
+  color: #013585;
+
+  font-size: 25px;
+
+  line-height: 1;
+
+  transition: color 0.4s ease;
+}
+
+.connect-item:hover .connect-item-content h3 {
+  color: #ffffff;
+}
+
+.connect-item-content p {
+  margin: 9px 0 0;
+
+  color: rgba(1, 53, 133, 0.55);
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  transition: color 0.4s ease;
+}
+
+.connect-item:hover .connect-item-content p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.connect-item-arrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffc107;
+
+  font-size: 12px;
+
+  transition: transform 0.4s ease;
+}
+
+.connect-item:hover .connect-item-arrow {
+  transform: translateX(8px);
+}
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.connect-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-top: 80px;
+
+  color: rgba(1, 53, 133, 0.35);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+}
+
+.connect-line {
+  position: relative;
+
+  width: 70px;
+
+  height: 1px;
+
+  overflow: hidden;
+
+  background: rgba(1, 53, 133, 0.15);
+}
+
+.connect-line span {
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 35%;
+
+  height: 100%;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .connect-section {
+    padding: 120px 5vw 90px;
+  }
+
+  .connect-container {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .connect-intro {
+    position: relative;
+
+    top: auto;
+
+    max-width: 700px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .connect-section {
+    padding: 90px 24px 70px;
+  }
+
+  .connect-container {
+    gap: 45px;
+  }
+
+  .connect-intro h2 {
+    font-size: clamp(55px, 17vw, 90px);
+
+    letter-spacing: -5px;
+  }
+
+  .connect-intro p {
+    font-size: 14px;
+  }
+
+  .connect-item {
+    grid-template-columns:
+      35px
+      50px
+      minmax(0, 1fr)
+      20px;
+
+    gap: 15px;
+
+    min-height: 140px;
+
+    padding: 22px 15px;
+  }
+
+  .connect-item-icon {
+    width: 50px;
+
+    height: 50px;
+
+    font-size: 15px;
+  }
+
+  .connect-item-content h3 {
+    font-size: 20px;
+  }
+
+  .connect-item-content p {
+    font-size: 11px;
+  }
+
+  .connect-bottom {
+    margin-top: 55px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+  .connect-section {
+    padding: 75px 18px 60px;
+  }
+
+  .connect-item {
+    grid-template-columns:
+      30px
+      45px
+      minmax(0, 1fr)
+      15px;
+
+    gap: 10px;
+
+    padding: 20px 10px;
+  }
+
+  .connect-item-icon {
+    width: 45px;
+
+    height: 45px;
+  }
+
+  .connect-item-content h3 {
+    font-size: 18px;
+  }
+}

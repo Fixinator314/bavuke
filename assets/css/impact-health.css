@@ -1,0 +1,550 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   IMPACT — HEALTHY LIFESTYLES
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.impact-health {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 150px 0;
+
+  background: #f5f5f2;
+
+  color: #013585;
+}
+
+/* =========================================================
+   BACKGROUND WORD
+========================================================= */
+
+.impact-health-bg {
+  position: absolute;
+
+  right: -5%;
+
+  top: 18%;
+
+  z-index: 0;
+
+  font-size: clamp(260px, 34vw, 600px);
+
+  line-height: 0.7;
+
+  font-weight: 800;
+
+  letter-spacing: -25px;
+
+  color: rgba(1, 53, 133, 0.035);
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.impact-health-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1250px, calc(100% - 80px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.impact-health-header {
+  max-width: 800px;
+
+  margin-bottom: 80px;
+}
+
+.impact-health-header h2 {
+  margin: 0;
+
+  font-size: clamp(65px, 8vw, 110px);
+
+  line-height: 0.84;
+
+  letter-spacing: -6px;
+
+  font-weight: 800;
+}
+
+.impact-health-header h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+.impact-health-header p {
+  max-width: 560px;
+
+  margin-top: 35px;
+
+  color: rgba(1, 53, 133, 0.65);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   FEATURE
+========================================================= */
+
+.impact-health-feature {
+  display: grid;
+
+  grid-template-columns:
+    1.25fr
+    0.75fr;
+
+  min-height: 520px;
+
+  margin-bottom: 90px;
+}
+
+/* =========================================================
+   FEATURE IMAGE
+========================================================= */
+
+.health-feature-image {
+  position: relative;
+
+  min-height: 520px;
+
+  overflow: hidden;
+}
+
+.health-image-placeholder {
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: linear-gradient(135deg, #013585, #0b4b8c);
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.health-image-label {
+  position: absolute;
+
+  left: 25px;
+
+  bottom: 25px;
+
+  padding: 10px 14px;
+
+  background: #ffc107;
+
+  color: #013585;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+/* =========================================================
+   FEATURE CONTENT
+========================================================= */
+
+.health-feature-content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 60px;
+
+  background: #013585;
+
+  color: #ffffff;
+}
+
+.health-feature-number {
+  margin-bottom: 30px;
+
+  color: #ffc107;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.health-feature-content h3 {
+  margin: 0;
+
+  font-size: clamp(40px, 4vw, 65px);
+
+  line-height: 0.92;
+
+  letter-spacing: -3px;
+}
+
+.health-feature-content h3 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+.health-feature-content p {
+  max-width: 420px;
+
+  margin-top: 30px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+.health-feature-line {
+  width: 100%;
+
+  max-width: 220px;
+
+  height: 1px;
+
+  margin-top: 45px;
+
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.health-feature-line span {
+  display: block;
+
+  width: 40%;
+
+  height: 100%;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   PROGRAMMES
+========================================================= */
+
+.health-programmes {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid rgba(1, 53, 133, 0.12);
+}
+
+/* =========================================================
+   PROGRAMME
+========================================================= */
+
+.health-programme {
+  position: relative;
+
+  min-height: 280px;
+
+  padding: 35px 30px;
+
+  border-right: 1px solid rgba(1, 53, 133, 0.12);
+
+  transition:
+    transform 0.4s ease,
+    background 0.4s ease;
+}
+
+.health-programme:last-child {
+  border-right: none;
+}
+
+.health-programme:hover {
+  transform: translateY(-8px);
+
+  background: #ffffff;
+}
+
+/* =========================================================
+   PROGRAMME TOP
+========================================================= */
+
+.health-programme-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 45px;
+}
+
+.health-programme-top > span {
+  color: #ffc107;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.health-programme-top i {
+  font-size: 21px;
+
+  color: #013585;
+}
+
+/* =========================================================
+   PROGRAMME CONTENT
+========================================================= */
+
+.health-programme h3 {
+  margin: 0;
+
+  font-size: 23px;
+
+  line-height: 1.1;
+
+  letter-spacing: -0.5px;
+}
+
+.health-programme p {
+  margin-top: 15px;
+
+  color: rgba(1, 53, 133, 0.6);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   PROGRAMME LINE
+========================================================= */
+
+.health-programme-line {
+  position: absolute;
+
+  left: 30px;
+
+  bottom: 25px;
+
+  width: 45px;
+
+  height: 2px;
+
+  background: #ffc107;
+
+  transition: width 0.4s ease;
+}
+
+.health-programme:hover .health-programme-line {
+  width: 80px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+  .impact-health {
+    padding: 120px 0;
+  }
+
+  .impact-health-feature {
+    grid-template-columns: 1fr 0.8fr;
+
+    min-height: 450px;
+  }
+
+  .health-feature-image {
+    min-height: 450px;
+  }
+
+  .health-feature-content {
+    padding: 45px;
+  }
+
+  .health-programmes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .health-programme {
+    min-height: 250px;
+
+    border-bottom: 1px solid rgba(1, 53, 133, 0.12);
+  }
+
+  .health-programme:nth-child(2) {
+    border-right: none;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .impact-health {
+    padding: 90px 0;
+  }
+
+  .impact-health-container {
+    width: calc(100% - 48px);
+  }
+
+  .impact-health-bg {
+    right: -18%;
+
+    top: 12%;
+
+    font-size: 60vw;
+
+    letter-spacing: -10px;
+  }
+
+  .impact-health-header {
+    margin-bottom: 50px;
+  }
+
+  .impact-health-header h2 {
+    font-size: clamp(55px, 17vw, 85px);
+
+    letter-spacing: -4px;
+  }
+
+  .impact-health-header p {
+    margin-top: 25px;
+
+    font-size: 14px;
+  }
+
+  /* ---------------------------------------------
+     FEATURE
+  --------------------------------------------- */
+
+  .impact-health-feature {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: auto;
+
+    margin-bottom: 60px;
+  }
+
+  .health-feature-image {
+    min-height: 300px;
+  }
+
+  .health-feature-content {
+    padding: 40px 30px;
+  }
+
+  .health-feature-content h3 {
+    font-size: 42px;
+
+    letter-spacing: -2px;
+  }
+
+  .health-feature-content p {
+    font-size: 14px;
+  }
+
+  /* ---------------------------------------------
+     PROGRAMMES
+  --------------------------------------------- */
+
+  .health-programmes {
+    grid-template-columns: 1fr;
+  }
+
+  .health-programme {
+    min-height: 230px;
+
+    padding: 30px 25px;
+
+    border-right: none;
+  }
+
+  .health-programme-top {
+    margin-bottom: 35px;
+  }
+
+  .health-programme h3 {
+    font-size: 22px;
+  }
+
+  .health-programme p {
+    font-size: 13px;
+  }
+
+  .health-programme-line {
+    left: 25px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+  .impact-health {
+    padding: 75px 0;
+  }
+
+  .impact-health-container {
+    width: calc(100% - 36px);
+  }
+
+  .health-feature-image {
+    min-height: 250px;
+  }
+
+  .health-feature-content {
+    padding: 35px 25px;
+  }
+
+  .health-feature-content h3 {
+    font-size: 36px;
+  }
+
+  .health-programme {
+    min-height: 215px;
+
+    padding: 25px 20px;
+  }
+
+  .health-programme-line {
+    left: 20px;
+  }
+}

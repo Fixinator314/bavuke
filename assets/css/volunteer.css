@@ -1,0 +1,516 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   GET INVOLVED — VOLUNTEER
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.volunteer-section {
+  position: relative;
+
+  min-height: 1000px;
+
+  padding: 150px 7vw 120px;
+
+  overflow: hidden;
+
+  background: #f5f7fa;
+
+  color: #013585;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.volunteer-intro {
+  position: relative;
+
+  z-index: 5;
+
+  max-width: 700px;
+
+  margin-bottom: 75px;
+}
+
+.volunteer-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 22px;
+
+  color: #013585;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.volunteer-eyebrow::before {
+  content: "";
+
+  width: 40px;
+
+  height: 3px;
+
+  background: #ffc107;
+}
+
+.volunteer-intro h2 {
+  margin: 0;
+
+  color: #013585;
+
+  font-size: clamp(65px, 8vw, 115px);
+
+  line-height: 0.82;
+
+  letter-spacing: -7px;
+
+  font-weight: 800;
+}
+
+.volunteer-intro h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+.volunteer-intro p {
+  max-width: 530px;
+
+  margin-top: 28px;
+
+  color: rgba(1, 53, 133, 0.62);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   STAGE
+========================================================= */
+
+.volunteer-stage {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 1400px;
+
+  min-height: 590px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.volunteer-image {
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 63%;
+
+  height: 590px;
+
+  overflow: hidden;
+
+  background: #013585;
+}
+
+.volunteer-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(1, 53, 133, 0.05),
+    rgba(1, 53, 133, 0.15)
+  );
+}
+
+.volunteer-image img {
+  width: 100%;
+
+  height: 115%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  display: block;
+
+  will-change: transform;
+}
+
+/* =========================================================
+   STATEMENT
+========================================================= */
+
+.volunteer-statement {
+  position: absolute;
+
+  top: 45px;
+
+  right: 0;
+
+  z-index: 4;
+
+  width: 310px;
+
+  min-height: 220px;
+
+  padding: 32px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  background: #ffc107;
+
+  color: #013585;
+}
+
+.volunteer-statement span {
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.volunteer-statement strong {
+  font-size: 34px;
+
+  line-height: 0.95;
+
+  letter-spacing: -2px;
+}
+
+.volunteer-statement em {
+  display: block;
+
+  color: #ffffff;
+
+  font-style: normal;
+}
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.volunteer-services {
+  position: absolute;
+
+  right: 0;
+
+  bottom: 0;
+
+  z-index: 5;
+
+  width: 55%;
+
+  background: #ffffff;
+
+  box-shadow: 0 20px 60px rgba(1, 53, 133, 0.08);
+}
+
+/* =========================================================
+   SERVICE
+========================================================= */
+
+.volunteer-service {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    45px
+    minmax(0, 1fr)
+    30px;
+
+  gap: 18px;
+
+  align-items: center;
+
+  padding: 24px 30px;
+
+  border-bottom: 1px solid rgba(1, 53, 133, 0.1);
+
+  cursor: pointer;
+
+  transition:
+    background 0.35s ease,
+    padding 0.35s ease;
+}
+
+.volunteer-service:last-child {
+  border-bottom: none;
+}
+
+.volunteer-service:hover {
+  padding-left: 38px;
+
+  background: #013585;
+
+  color: #ffffff;
+}
+
+.volunteer-service-number {
+  color: #ffc107;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.volunteer-service h3 {
+  margin: 0;
+
+  color: inherit;
+
+  font-size: 25px;
+
+  line-height: 1;
+}
+
+.volunteer-service p {
+  max-width: 390px;
+
+  margin: 7px 0 0;
+
+  color: rgba(1, 53, 133, 0.55);
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+.volunteer-service:hover p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.volunteer-service > i {
+  color: #ffc107;
+
+  font-size: 12px;
+
+  transition: transform 0.35s ease;
+}
+
+.volunteer-service:hover > i {
+  transform: translate(4px, -4px);
+}
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.volunteer-bottom {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-top: 70px;
+
+  color: rgba(1, 53, 133, 0.4);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.volunteer-progress {
+  position: relative;
+
+  width: 180px;
+
+  height: 2px;
+
+  overflow: hidden;
+
+  background: rgba(1, 53, 133, 0.12);
+}
+
+.volunteer-progress span {
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 35%;
+
+  height: 100%;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .volunteer-section {
+    padding: 120px 5vw 100px;
+  }
+
+  .volunteer-stage {
+    min-height: 650px;
+  }
+
+  .volunteer-image {
+    width: 65%;
+
+    height: 520px;
+  }
+
+  .volunteer-services {
+    width: 62%;
+  }
+
+  .volunteer-statement {
+    width: 270px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .volunteer-section {
+    min-height: auto;
+
+    padding: 90px 24px 80px;
+  }
+
+  .volunteer-intro {
+    margin-bottom: 50px;
+  }
+
+  .volunteer-intro h2 {
+    font-size: clamp(58px, 17vw, 90px);
+
+    letter-spacing: -5px;
+  }
+
+  .volunteer-intro p {
+    font-size: 14px;
+  }
+
+  /* ---------------------------------------------
+     STAGE
+  --------------------------------------------- */
+
+  .volunteer-stage {
+    min-height: 0;
+
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .volunteer-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 430px;
+  }
+
+  .volunteer-statement {
+    position: relative;
+
+    top: auto;
+
+    right: auto;
+
+    width: 80%;
+
+    min-height: 170px;
+
+    margin-top: -60px;
+
+    margin-left: auto;
+  }
+
+  .volunteer-services {
+    position: relative;
+
+    right: auto;
+
+    bottom: auto;
+
+    width: 100%;
+
+    margin-top: 15px;
+  }
+
+  .volunteer-service {
+    grid-template-columns:
+      35px
+      minmax(0, 1fr)
+      25px;
+
+    padding: 22px 20px;
+  }
+
+  .volunteer-service:hover {
+    padding-left: 25px;
+  }
+
+  .volunteer-service h3 {
+    font-size: 22px;
+  }
+
+  .volunteer-service p {
+    font-size: 12px;
+  }
+
+  .volunteer-bottom {
+    margin-top: 45px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+  .volunteer-section {
+    padding: 75px 18px 70px;
+  }
+
+  .volunteer-image {
+    height: 360px;
+  }
+
+  .volunteer-statement {
+    width: 88%;
+  }
+}

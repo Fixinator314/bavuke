@@ -251,7 +251,7 @@
 
   font-weight: 600;
 
-  color: #1a3a5c;
+  color: #1a3a5c !important;
 
   opacity: 0;
 
@@ -267,7 +267,7 @@
 
   margin: 22px auto 0;
 
-  color: #555;
+  color: #555 !important;
 
   font-size: 17px;
 

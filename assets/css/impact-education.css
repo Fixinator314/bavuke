@@ -1,0 +1,494 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   IMPACT — EDUCATION
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.impact-education {
+  position: relative;
+
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  padding: 140px 0;
+
+  background: #ffffff;
+
+  color: #013585;
+}
+
+/* =========================================================
+   BACKGROUND WORD
+========================================================= */
+
+.impact-education-bg {
+  position: absolute;
+
+  left: -4%;
+
+  bottom: -5%;
+
+  z-index: 0;
+
+  font-size: clamp(220px, 30vw, 520px);
+
+  font-weight: 800;
+
+  line-height: 0.7;
+
+  letter-spacing: -20px;
+
+  color: rgba(1, 53, 133, 0.035);
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.impact-education-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1250px, calc(100% - 80px));
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    0.8fr
+    1.2fr;
+
+  gap: 100px;
+
+  align-items: start;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.impact-education-intro {
+  position: sticky;
+
+  top: 140px;
+}
+
+.impact-education-intro h2 {
+  margin: 0;
+
+  font-size: clamp(65px, 7vw, 105px);
+
+  line-height: 0.85;
+
+  letter-spacing: -6px;
+
+  font-weight: 800;
+}
+
+.impact-education-intro h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+.impact-education-intro > p {
+  max-width: 420px;
+
+  margin-top: 30px;
+
+  color: rgba(1, 53, 133, 0.65);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.education-progress {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 70px;
+}
+
+.education-progress-line {
+  position: relative;
+
+  width: 120px;
+
+  height: 2px;
+
+  overflow: hidden;
+
+  background: rgba(1, 53, 133, 0.12);
+}
+
+.education-progress-line span {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 33.33%;
+
+  height: 100%;
+
+  background: #ffc107;
+}
+
+.education-progress-count {
+  display: flex;
+
+  gap: 6px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.education-current {
+  color: #ffc107;
+}
+
+/* =========================================================
+   STORY
+========================================================= */
+
+.impact-education-story {
+  position: relative;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.education-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  height: 480px;
+
+  overflow: hidden;
+}
+
+.education-image {
+  width: 100%;
+
+  height: 100%;
+}
+
+.education-image-placeholder {
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: linear-gradient(135deg, #013585, #0b4b8c);
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+/* =========================================================
+   IMAGE LABEL
+========================================================= */
+
+.education-image-label {
+  position: absolute;
+
+  left: 25px;
+
+  bottom: 25px;
+
+  padding: 10px 14px;
+
+  background: #ffc107;
+
+  color: #013585;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+/* =========================================================
+   PROGRAMMES
+========================================================= */
+
+.education-programmes {
+  margin-top: 70px;
+}
+
+.education-programme {
+  display: grid;
+
+  grid-template-columns: 60px 1fr;
+
+  gap: 25px;
+
+  padding: 45px 0;
+
+  border-top: 1px solid rgba(1, 53, 133, 0.12);
+
+  opacity: 0.35;
+
+  transition: opacity 0.5s ease;
+}
+
+.education-programme:last-child {
+  border-bottom: 1px solid rgba(1, 53, 133, 0.12);
+}
+
+.education-programme.active {
+  opacity: 1;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.education-programme-number {
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  color: #ffc107;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.education-programme-content h3 {
+  margin: 0;
+
+  font-size: 30px;
+
+  line-height: 1.1;
+
+  letter-spacing: -1px;
+}
+
+.education-programme-content p {
+  max-width: 600px;
+
+  margin: 18px 0 0;
+
+  color: rgba(1, 53, 133, 0.65);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.education-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 22px;
+}
+
+.education-tags span {
+  padding: 7px 10px;
+
+  border: 1px solid rgba(1, 53, 133, 0.12);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+  .impact-education {
+    padding: 110px 0;
+  }
+
+  .impact-education-container {
+    grid-template-columns: 1fr 1.2fr;
+
+    gap: 55px;
+  }
+
+  .impact-education-intro h2 {
+    font-size: clamp(55px, 8vw, 80px);
+  }
+
+  .education-image-wrapper {
+    height: 400px;
+  }
+
+  .education-programme {
+    grid-template-columns: 45px 1fr;
+
+    gap: 18px;
+  }
+
+  .education-programme-content h3 {
+    font-size: 25px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .impact-education {
+    min-height: auto;
+
+    padding: 90px 0;
+  }
+
+  .impact-education-container {
+    width: calc(100% - 48px);
+
+    display: block;
+  }
+
+  .impact-education-bg {
+    left: -12%;
+
+    bottom: 5%;
+
+    font-size: 55vw;
+
+    letter-spacing: -8px;
+  }
+
+  .impact-education-intro {
+    position: relative;
+
+    top: auto;
+
+    margin-bottom: 55px;
+  }
+
+  .impact-education-intro h2 {
+    font-size: clamp(55px, 17vw, 85px);
+
+    letter-spacing: -4px;
+  }
+
+  .impact-education-intro > p {
+    margin-top: 25px;
+
+    font-size: 14px;
+  }
+
+  .education-progress {
+    margin-top: 40px;
+  }
+
+  .education-progress-line {
+    width: 90px;
+  }
+
+  .education-image-wrapper {
+    height: 300px;
+  }
+
+  .education-programmes {
+    margin-top: 40px;
+  }
+
+  .education-programme {
+    grid-template-columns: 35px 1fr;
+
+    gap: 15px;
+
+    padding: 35px 0;
+
+    opacity: 1;
+  }
+
+  .education-programme-content h3 {
+    font-size: 23px;
+  }
+
+  .education-programme-content p {
+    font-size: 13px;
+  }
+
+  .education-tags span {
+    font-size: 8px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+  .impact-education {
+    padding: 75px 0;
+  }
+
+  .impact-education-container {
+    width: calc(100% - 36px);
+  }
+
+  .education-image-wrapper {
+    height: 250px;
+  }
+
+  .education-programme {
+    grid-template-columns: 30px 1fr;
+
+    gap: 12px;
+  }
+
+  .education-programme-content h3 {
+    font-size: 21px;
+  }
+
+  .education-programme-content p {
+    font-size: 12px;
+  }
+}

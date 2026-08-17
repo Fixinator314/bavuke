@@ -1,0 +1,470 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   IMPACT — IMPACT IN ACTION
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.impact-action {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 150px 0 130px;
+
+  background: #ffffff;
+
+  color: #013585;
+}
+
+/* =========================================================
+   BACKGROUND WORD
+========================================================= */
+
+.impact-action-bg {
+  position: absolute;
+
+  right: -7%;
+
+  top: 18%;
+
+  z-index: 0;
+
+  font-size: clamp(250px, 34vw, 600px);
+
+  line-height: 0.7;
+
+  font-weight: 800;
+
+  letter-spacing: -25px;
+
+  color: rgba(1, 53, 133, 0.035);
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.impact-action-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1250px, calc(100% - 80px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.impact-action-header {
+  max-width: 780px;
+
+  margin-bottom: 85px;
+}
+
+.impact-action-header h2 {
+  margin: 0;
+
+  font-size: clamp(65px, 8vw, 110px);
+
+  line-height: 0.84;
+
+  letter-spacing: -6px;
+
+  font-weight: 800;
+}
+
+.impact-action-header h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+.impact-action-header p {
+  max-width: 560px;
+
+  margin-top: 35px;
+
+  color: rgba(1, 53, 133, 0.62);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   PHOTO GRID
+========================================================= */
+
+.impact-action-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.2fr
+    0.8fr;
+
+  grid-template-rows:
+    360px
+    360px;
+
+  gap: 18px;
+}
+
+/* =========================================================
+   ITEM
+========================================================= */
+
+.impact-action-item {
+  position: relative;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  background: #013585;
+}
+
+/* =========================================================
+   GRID POSITIONS
+========================================================= */
+
+.impact-action-large {
+  grid-row: span 2;
+}
+
+.impact-action-wide {
+  grid-column: 2;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.impact-action-image {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+}
+
+.impact-action-image img {
+  width: 100%;
+
+  height: 110%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  will-change: transform;
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.impact-action-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(1, 53, 133, 0.02) 35%,
+    rgba(1, 53, 133, 0.8) 100%
+  );
+}
+
+/* =========================================================
+   CAPTION
+========================================================= */
+
+.impact-action-item figcaption {
+  position: absolute;
+
+  left: 25px;
+
+  right: 25px;
+
+  bottom: 22px;
+
+  z-index: 3;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  color: #ffffff;
+}
+
+.impact-action-item figcaption span {
+  color: #ffc107;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.impact-action-item figcaption strong {
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.2px;
+}
+
+/* =========================================================
+   STATEMENT
+========================================================= */
+
+.impact-action-statement {
+  display: grid;
+
+  grid-template-columns:
+    80px
+    1fr
+    80px;
+
+  align-items: center;
+
+  margin-top: 70px;
+
+  padding-top: 35px;
+
+  border-top: 1px solid rgba(1, 53, 133, 0.12);
+}
+
+.impact-action-statement-number {
+  color: #ffc107;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.impact-action-statement p {
+  max-width: 600px;
+
+  margin: 0;
+
+  font-size: clamp(25px, 3vw, 40px);
+
+  line-height: 1.05;
+
+  letter-spacing: -1.5px;
+
+  font-weight: 700;
+}
+
+.impact-action-arrow {
+  justify-self: end;
+
+  width: 48px;
+
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid rgba(1, 53, 133, 0.15);
+
+  color: #013585;
+
+  font-size: 14px;
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.impact-action-item {
+  transition: transform 0.5s ease;
+}
+
+.impact-action-item:hover {
+  transform: translateY(-6px);
+}
+
+.impact-action-item:hover .impact-action-image img {
+  transform: scale(1.06);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .impact-action {
+    padding: 120px 0;
+  }
+
+  .impact-action-grid {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows:
+      380px
+      300px;
+  }
+
+  .impact-action-large {
+    grid-row: span 2;
+  }
+
+  .impact-action-item figcaption {
+    left: 20px;
+
+    right: 20px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .impact-action {
+    padding: 90px 0;
+  }
+
+  .impact-action-container {
+    width: calc(100% - 48px);
+  }
+
+  .impact-action-bg {
+    right: -15%;
+
+    top: 20%;
+
+    font-size: 58vw;
+
+    letter-spacing: -10px;
+  }
+
+  .impact-action-header {
+    margin-bottom: 50px;
+  }
+
+  .impact-action-header h2 {
+    font-size: clamp(55px, 17vw, 85px);
+
+    letter-spacing: -4px;
+  }
+
+  .impact-action-header p {
+    margin-top: 25px;
+
+    font-size: 14px;
+  }
+
+  /* ---------------------------------------------
+     PHOTO GRID
+  --------------------------------------------- */
+
+  .impact-action-grid {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .impact-action-item {
+    min-height: 280px;
+  }
+
+  .impact-action-large {
+    min-height: 380px;
+  }
+
+  .impact-action-wide {
+    min-height: 280px;
+  }
+
+  /* ---------------------------------------------
+     STATEMENT
+  --------------------------------------------- */
+
+  .impact-action-statement {
+    grid-template-columns:
+      40px
+      1fr
+      45px;
+
+    gap: 15px;
+
+    margin-top: 50px;
+
+    padding-top: 25px;
+  }
+
+  .impact-action-statement p {
+    font-size: 23px;
+
+    letter-spacing: -0.8px;
+  }
+
+  .impact-action-arrow {
+    width: 40px;
+
+    height: 40px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+  .impact-action {
+    padding: 75px 0;
+  }
+
+  .impact-action-container {
+    width: calc(100% - 36px);
+  }
+
+  .impact-action-item {
+    min-height: 240px;
+  }
+
+  .impact-action-large {
+    min-height: 320px;
+  }
+
+  .impact-action-statement {
+    grid-template-columns:
+      30px
+      1fr;
+  }
+
+  .impact-action-arrow {
+    display: none;
+  }
+
+  .impact-action-statement p {
+    font-size: 21px;
+  }
+}

@@ -12,7 +12,7 @@
 @import url("./assets/css/ubuntu.css");
 @import url("./assets/css/about.css");
 @import url("./assets/css/programmes.css");
-@import url("./assets/css/impact-journey.css");
+@import url("./assets/css/journey-home.css");
 @import url("./assets/css/give.css");
 @import url("./assets/css/closing.css");
 
@@ -39,6 +39,34 @@
 @import url("./assets/css/change-model.css");
 @import url("./assets/css/ripple-effect.css");
 @import url("./assets/css/rise-with-us.css");
+
+/* =========================================================
+   03. IMPACT
+========================================================= */
+@import url("./assets/css/impact-overview.css");
+@import url("./assets/css/impact-education.css");
+@import url("./assets/css/impact-health.css");
+@import url("./assets/css/impact-community.css");
+@import url("./assets/css/impact-action.css");
+@import url("./assets/css/impact-numbers.css");
+@import url("./assets/css/ubuntu-impact.css");
+@import url("./assets/css/impact-journey.css");
+
+/* =========================================================
+   03. GET INVOLVED
+========================================================= */
+@import url("./assets/css/ways-to-help.css");
+@import url("./assets/css/give-involved.css");
+@import url("./assets/css/volunteer.css");
+@import url("./assets/css/partnership.css");
+@import url("./assets/css/next-step.css");
+
+/* =========================================================
+   03. CONTACT
+========================================================= */
+@import url("./assets/css/contact-main.css");
+@import url("./assets/css/connect.css");
+@import url("./assets/css/contact-location.css");
 
 /* =========================================================
    RESET
@@ -80,11 +108,11 @@ body.menu-open {
 
 a {
   color: #2c5aa0;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* =========================================================

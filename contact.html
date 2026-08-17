@@ -53,29 +53,397 @@
       <div class="nav-overlay"></div>
     </nav>
 
-    <!-- =========================
-       HERO
-  ========================== -->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h1>Bavuke Foundation</h1>
-        <div class="yellow-line"></div>
-        <p class="hero-subtitle">
-          Raising Stronger Communities through Education, Health, and
-          Opportunity
+    <!-- =====================================================
+     INNER PAGE HERO
+====================================================== -->
+
+    <section class="inner-page-hero" data-page="contact">
+      <div class="inner-page-hero-image">
+        <img src="./assets/images/Bavuke1.png" alt="" />
+      </div>
+
+      <div class="inner-page-hero-overlay"></div>
+
+      <div class="inner-page-hero-word">CONTACT</div>
+
+      <div class="inner-page-hero-content">
+        <div class="inner-page-hero-eyebrow">GET IN TOUCH</div>
+
+        <h1>
+          Let's
+          <span>Connect.</span>
+        </h1>
+
+        <p>
+          Whether you want to learn more about Bavuke, get involved or explore a
+          partnership, we'd love to hear from you.
         </p>
-        <p class="hero-tagline">Guided by Ubuntu: "I am because we are"</p>
-        <div class="hero-buttons">
-          <button class="btn-primary">Partner With Us</button>
-          <button class="btn-secondary">Learn More</button>
+      </div>
+
+      <div class="inner-page-hero-bottom">
+        <span> 01 </span>
+
+        <div class="inner-page-hero-scroll">
+          <span> SCROLL TO EXPLORE </span>
+
+          <div class="inner-page-scroll-line">
+            <span></span>
+          </div>
         </div>
+
+        <span> CONTACT </span>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     CONTACT SECTION
+====================================================== -->
+
+    <section id="contact-form-section" class="contact-main">
+      <div class="contact-main-container">
+        <!-- =================================================
+         LEFT SIDE
+    ================================================== -->
+
+        <div class="contact-information">
+          <div class="contact-eyebrow">CONTACT BAVUKE</div>
+
+          <h2>
+            We'd love
+            <span>to hear from you.</span>
+          </h2>
+
+          <p class="contact-intro">
+            Have a question, want to get involved, or interested in working with
+            Bavuke? Send us a message and we'll get back to you.
+          </p>
+
+          <!-- =================================================
+           CONTACT DETAILS
+      ================================================== -->
+
+          <div class="contact-details">
+            <!-- EMAIL -->
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+
+              <div>
+                <span> EMAIL </span>
+
+                <a href="mailto:mpillay@bavukefoundation.co.za">
+                  mpillay@bavukefoundation.co.za
+                </a>
+              </div>
+            </div>
+
+            <!-- PHONE -->
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+
+              <div>
+                <span> PHONE </span>
+
+                <a href="tel:+27833016406"> +27 83 301 6406 </a>
+              </div>
+            </div>
+
+            <!-- LOCATION -->
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+
+              <div>
+                <span> ADDRESS </span>
+
+                <p>
+                  1707 Waterstone Park, Blackrock Road, Greenstone, Edenvale,
+                  Johannesburg, South Africa 1609
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =================================================
+         RIGHT SIDE — FORM
+    ================================================== -->
+
+        <div class="contact-form-wrapper">
+          <div class="contact-form-header">
+            <span> SEND A MESSAGE </span>
+
+            <div class="contact-form-number">01</div>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <!-- NAME -->
+
+            <div class="form-field">
+              <label for="name"> YOUR NAME </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <!-- EMAIL -->
+
+            <div class="form-field">
+              <label for="email"> YOUR EMAIL </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <!-- SUBJECT -->
+
+            <div class="form-field">
+              <label for="subject"> SUBJECT </label>
+
+              <select id="subject" name="subject" required>
+                <option value="" selected disabled>Select an option</option>
+
+                <option value="general">General Enquiry</option>
+
+                <option value="volunteer">Volunteering</option>
+
+                <option value="partnership">Partnership</option>
+
+                <option value="donation">Donations</option>
+
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- MESSAGE -->
+
+            <div class="form-field">
+              <label for="message"> YOUR MESSAGE </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell us how we can help..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- SUBMIT -->
+
+            <button type="submit" class="contact-submit">
+              <span> SEND MESSAGE </span>
+
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div
+              class="contact-form-status"
+              id="contact-form-status"
+              aria-live="polite"
+            ></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     CONTACT SECTION 03
+     WAYS TO CONNECT
+====================================================== -->
+
+    <section id="ways-to-connect" class="connect-section">
+      <div class="connect-container">
+        <!-- ========== INTRO
+    ================================================== -->
+
+        <div class="connect-intro">
+          <div class="connect-eyebrow">WAYS TO CONNECT</div>
+
+          <h2>
+            Choose how
+            <span>we connect.</span>
+          </h2>
+
+          <p>
+            Have a question or simply want to start a conversation? Reach Bavuke
+            through whichever channel works best for you.
+          </p>
+        </div>
+
+        <!-- =================================================
+         CONNECTION PANELS
+    ================================================== -->
+
+        <div class="connect-list">
+          <!-- EMAIL -->
+
+          <a href="mailto:mpillay@bavukefoundation.co.za" class="connect-item">
+            <div class="connect-item-number">01</div>
+
+            <div class="connect-item-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="connect-item-content">
+              <span> EMAIL </span>
+
+              <h3>Send us an email</h3>
+
+              <p>mpillay@bavukefoundation.co.za</p>
+            </div>
+
+            <div class="connect-item-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+
+          <!-- PHONE -->
+
+          <a href="tel:+27833016406" class="connect-item">
+            <div class="connect-item-number">02</div>
+
+            <div class="connect-item-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div class="connect-item-content">
+              <span> PHONE </span>
+
+              <h3>Give us a call</h3>
+
+              <p>+27 83 301 6406</p>
+            </div>
+
+            <div class="connect-item-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+
+          <!-- ADDRESS -->
+
+          <a href="#location" class="connect-item">
+            <div class="connect-item-number">03</div>
+
+            <div class="connect-item-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div class="connect-item-content">
+              <span> LOCATION </span>
+
+              <h3>Come visit us</h3>
+
+              <p>Greenstone, Edenvale, Johannesburg</p>
+            </div>
+
+            <div class="connect-item-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       UBUNTU LINE
+  ================================================== -->
+
+      <div class="connect-bottom">
+        <span> GUIDED BY UBUNTU </span>
+
+        <div class="connect-line">
+          <span></span>
+        </div>
+
+        <span> I AM BECAUSE WE ARE </span>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     CONTACT SECTION 04
+     LOCATION
+====================================================== -->
+
+    <section id="location" class="contact-location">
+      <!-- =================================================
+       MAP
+  ================================================== -->
+
+      <div class="location-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.5291160993233!2d28.148823975080003!3d-26.11428566031737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9512e6ef5532f5%3A0x7b995e4bf1ee22b9!2sWaterstone%20Park!5e0!3m2!1sen!2sza!4v1786886679611!5m2!1sen!2sza"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+
+      <!-- =================================================
+       LOCATION CARD
+  ================================================== -->
+
+      <div class="location-card">
+        <div class="location-card-eyebrow">FIND BAVUKE</div>
+
+        <h2>
+          Come
+          <span>visit us.</span>
+        </h2>
+
+        <p>
+          1707 Waterstone Park, Blackrock Road, Greenstone, Edenvale,
+          Johannesburg, South Africa 1609
+        </p>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=1707+Waterstone+Park+Blackrock+Road+Greenstone+Edenvale+Johannesburg+South+Africa"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="location-directions"
+        >
+          <span> OPEN IN GOOGLE MAPS </span>
+
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <!-- =================================================
+       MAP LABEL
+  ================================================== -->
+
+      <div class="location-label">
+        <span> JOHANNESBURG </span>
+
+        <div class="location-label-line"></div>
+
+        <span> SOUTH AFRICA </span>
       </div>
     </section>
 
     <!-- =========================
        CONTACT
   ========================== -->
-    <section id="contact" class="bg-blue">
+    <!-- <section id="contact" class="bg-blue">
       <div class="container">
         <h1 style="text-align: center; margin-bottom: 60px">Contact Us</h1>
         <div class="grid-2">
@@ -110,7 +478,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- =========================
        FOOTER
@@ -152,9 +520,15 @@
       </div>
     </footer>
 
+    <!-- =========================GSAP========================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <!-- =========================
        JAVASCRIPT
   ========================== -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/contact-main.js"></script>
+    <script src="./assets/js/connect.js"></script>
+    <script src="./assets/js/contact-location.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

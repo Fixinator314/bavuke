@@ -1,0 +1,544 @@
+/* =========================================================
+   BAVUKE FOUNDATION
+   GET INVOLVED — PARTNERSHIPS
+========================================================= */
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.partnership-section {
+  position: relative;
+
+  min-height: 1000px;
+
+  padding: 150px 7vw 120px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  color: #013585;
+}
+
+/* =========================================================
+   BACKGROUND WORD
+========================================================= */
+
+.partnership-background-word {
+  position: absolute;
+
+  right: -5%;
+
+  bottom: -5%;
+
+  z-index: 0;
+
+  font-size: clamp(180px, 27vw, 480px);
+
+  line-height: 0.7;
+
+  font-weight: 800;
+
+  letter-spacing: -15px;
+
+  color: rgba(1, 53, 133, 0.035);
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.partnership-container {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(360px, 0.85fr)
+    minmax(500px, 1.15fr);
+
+  gap: 100px;
+
+  align-items: center;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.partnership-heading {
+  max-width: 600px;
+}
+
+.partnership-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+
+  color: #013585;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.partnership-eyebrow::before {
+  content: "";
+
+  width: 40px;
+
+  height: 3px;
+
+  background: #ffc107;
+}
+
+.partnership-heading h2 {
+  margin: 0;
+
+  color: #013585;
+
+  font-size: clamp(65px, 7vw, 105px);
+
+  line-height: 0.82;
+
+  letter-spacing: -6px;
+
+  font-weight: 800;
+}
+
+.partnership-heading h2 span {
+  display: block;
+
+  color: #ffc107;
+}
+
+.partnership-heading > p {
+  max-width: 460px;
+
+  margin-top: 30px;
+
+  color: rgba(1, 53, 133, 0.6);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.partnership-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  margin-top: 40px;
+
+  padding: 19px 25px;
+
+  background: #013585;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease;
+}
+
+.partnership-button i {
+  color: #ffc107;
+
+  transition: transform 0.35s ease;
+}
+
+.partnership-button:hover {
+  transform: translateY(-4px);
+}
+
+.partnership-button:hover i {
+  transform: translateX(7px);
+}
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.partnership-content {
+  position: relative;
+
+  min-height: 700px;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.partnership-image {
+  position: absolute;
+
+  top: 0;
+
+  right: 0;
+
+  width: 68%;
+
+  height: 400px;
+
+  overflow: hidden;
+
+  background: #013585;
+}
+
+.partnership-image img {
+  width: 100%;
+
+  height: 115%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  will-change: transform;
+}
+
+.partnership-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(1, 53, 133, 0.05),
+    rgba(1, 53, 133, 0.35)
+  );
+}
+
+/* =========================================================
+   PATHWAY
+========================================================= */
+
+.partnership-pathway {
+  position: absolute;
+
+  left: 0;
+
+  right: 10%;
+
+  bottom: 0;
+
+  z-index: 3;
+
+  background: #013585;
+}
+
+/* =========================================================
+   STEP
+========================================================= */
+
+.partnership-step {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    55px
+    minmax(0, 1fr);
+
+  gap: 20px;
+
+  padding: 27px 30px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  transition:
+    background 0.35s ease,
+    padding 0.35s ease;
+}
+
+.partnership-step:last-child {
+  border-bottom: none;
+}
+
+.partnership-step:hover {
+  padding-left: 38px;
+
+  background: #06449e;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.partnership-step-number {
+  color: #ffc107;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  padding-top: 3px;
+}
+
+/* =========================================================
+   STEP LABEL
+========================================================= */
+
+.partnership-step-content > span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+}
+
+/* =========================================================
+   STEP HEADING
+========================================================= */
+
+.partnership-step-content h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 22px;
+
+  line-height: 1.1;
+}
+
+/* =========================================================
+   STEP DESCRIPTION
+========================================================= */
+
+.partnership-step-content p {
+  max-width: 430px;
+
+  margin: 8px 0 0;
+
+  color: rgba(255, 255, 255, 0.58);
+
+  font-size: 12px;
+
+  line-height: 1.55;
+}
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.partnership-bottom {
+  position: relative;
+
+  z-index: 4;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-top: 70px;
+
+  color: rgba(1, 53, 133, 0.4);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.partnership-line {
+  position: relative;
+
+  width: 180px;
+
+  height: 2px;
+
+  overflow: hidden;
+
+  background: rgba(1, 53, 133, 0.12);
+}
+
+.partnership-line span {
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 35%;
+
+  height: 100%;
+
+  background: #ffc107;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .partnership-section {
+    padding: 120px 5vw 100px;
+  }
+
+  .partnership-container {
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+  }
+
+  .partnership-content {
+    min-height: 680px;
+  }
+
+  .partnership-heading {
+    max-width: 700px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .partnership-section {
+    min-height: auto;
+
+    padding: 90px 24px 80px;
+  }
+
+  .partnership-container {
+    gap: 55px;
+  }
+
+  .partnership-heading h2 {
+    font-size: clamp(58px, 17vw, 90px);
+
+    letter-spacing: -5px;
+  }
+
+  .partnership-heading > p {
+    font-size: 14px;
+  }
+
+  .partnership-content {
+    min-height: auto;
+
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .partnership-image {
+    position: relative;
+
+    top: auto;
+
+    right: auto;
+
+    width: 100%;
+
+    height: 380px;
+  }
+
+  .partnership-pathway {
+    position: relative;
+
+    left: auto;
+
+    right: auto;
+
+    bottom: auto;
+
+    width: 100%;
+
+    margin-top: -35px;
+  }
+
+  .partnership-step {
+    grid-template-columns:
+      40px
+      minmax(0, 1fr);
+
+    gap: 15px;
+
+    padding: 24px 20px;
+  }
+
+  .partnership-step:hover {
+    padding-left: 25px;
+  }
+
+  .partnership-step-content h3 {
+    font-size: 20px;
+  }
+
+  .partnership-step-content p {
+    font-size: 12px;
+  }
+
+  .partnership-bottom {
+    margin-top: 45px;
+  }
+
+  .partnership-background-word {
+    font-size: 55vw;
+
+    letter-spacing: -8px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+  .partnership-section {
+    padding: 75px 18px 70px;
+  }
+
+  .partnership-image {
+    height: 330px;
+  }
+}
