@@ -5,17 +5,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   /* =======================================================
-     GSAP CHECK
-  ======================================================= */
-
-  if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
-    console.warn("GSAP or ScrollTrigger is not loaded.");
-    return;
-  }
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  /* =======================================================
      ELEMENTS
   ======================================================= */
 
@@ -33,15 +22,191 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const status = document.querySelector("#contact-form-status");
 
-  if (!section) {
+  /* =======================================================
+     CONTACT FORM → BACKEND
+     
+     IMPORTANT:
+     This is kept OUTSIDE the GSAP check.
+     The form must work even if GSAP is unavailable.
+  ======================================================= */
+
+  if (contactForm && status) {
+    contactForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      console.log("Bavuke contact form submitted.");
+
+      /* =================================================
+         GET FORM VALUES
+      ================================================= */
+
+      const name = contactForm.querySelector('[name="name"]')?.value.trim();
+
+      const email = contactForm.querySelector('[name="email"]')?.value.trim();
+
+      const subject = contactForm
+        .querySelector('[name="subject"]')
+        ?.value.trim();
+
+      const message = contactForm
+        .querySelector('[name="message"]')
+        ?.value.trim();
+
+      /* =================================================
+         DEBUG
+      ================================================= */
+
+      console.log("Form data:", {
+        name,
+        email,
+        subject,
+        message,
+      });
+
+      /* =================================================
+         VALIDATION
+      ================================================= */
+
+      if (!name || !email || !subject || !message) {
+        status.textContent = "Please complete all required fields.";
+
+        status.style.color = "#d32f2f";
+
+        console.warn("Contact form validation failed.");
+
+        return;
+      }
+
+      /* =================================================
+         BUTTON
+      ================================================= */
+
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+
+      let originalButtonText = "SEND MESSAGE";
+
+      if (submitButton) {
+        originalButtonText = submitButton.textContent;
+
+        submitButton.disabled = true;
+
+        submitButton.textContent = "SENDING...";
+      }
+
+      /* =================================================
+         STATUS
+      ================================================= */
+
+      status.textContent = "Sending your message...";
+
+      status.style.color = "#ffc107";
+
+      /* =================================================
+         DATA
+      ================================================= */
+
+      const formData = {
+        name,
+        email,
+        subject,
+        message,
+      };
+
+      /* =================================================
+         SEND TO EXPRESS API
+      ================================================= */
+
+      try {
+        console.log("Sending request to Bavuke API...");
+
+        const response = await fetch("http://localhost:5000/api/contact", {
+          method: "POST",
+
+          headers: {
+            "Content-Type": "application/json",
+          },
+
+          body: JSON.stringify(formData),
+        });
+
+        console.log("API response status:", response.status);
+
+        const data = await response.json();
+
+        console.log("API response:", data);
+
+        /* =================================================
+           SUCCESS
+        ================================================= */
+
+        if (response.ok && data.success) {
+          status.textContent =
+            "Thank you for contacting Bavuke Foundation. Your message has been received.";
+
+          status.style.color = "#ffffff";
+
+          contactForm.reset();
+
+          console.log("✅ Contact submission successfully saved.");
+        } else {
+
+        /* =================================================
+           SERVER ERROR
+        ================================================= */
+          status.textContent =
+            data.message ||
+            "Something went wrong while submitting your message.";
+
+          status.style.color = "#ff4d4d";
+
+          console.error("❌ API error:", data);
+        }
+      } catch (error) {
+        /* ===================================================
+         NETWORK ERROR
+      =================================================== */
+
+        console.error("❌ Contact form network error:", error);
+
+        status.textContent =
+          "Unable to connect to the server. Please try again later.";
+
+        status.style.color = "#ff4d4d";
+      } finally {
+        /* =================================================
+         RESTORE BUTTON
+      ================================================= */
+
+        if (submitButton) {
+          submitButton.disabled = false;
+
+          submitButton.textContent = originalButtonText;
+        }
+      }
+    });
+  }
+
+  /* =======================================================
+     GSAP
+     
+     Everything below this point is ONLY animation.
+  ======================================================= */
+
+  if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
+    console.warn(
+      "GSAP or ScrollTrigger is not loaded. Contact form will still work.",
+    );
+
     return;
   }
+
+  gsap.registerPlugin(ScrollTrigger);
 
   /* =====================================================
      INTRO
   ===================================================== */
 
-  if (information) {
+  if (section && information) {
     gsap.fromTo(
       information,
 
@@ -104,7 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =====================================================
-     FORM
+     FORM ANIMATION
   ===================================================== */
 
   if (form) {
@@ -136,10 +301,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =====================================================
-     FORM FIELDS
+     FORM FIELD ANIMATION
   ===================================================== */
 
-  if (fields.length) {
+  if (fields.length && form) {
     gsap.fromTo(
       fields,
 
@@ -167,136 +332,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       },
     );
-  }
-
-  /* =====================================================
-     CONTACT FORM → BACKEND
-  ===================================================== */
-
-  if (contactForm && status) {
-    contactForm.addEventListener("submit", async (event) => {
-      event.preventDefault();
-
-      /* =================================================
-         GET FORM VALUES
-      ================================================= */
-
-      const name = contactForm.querySelector('[name="name"]')?.value.trim();
-
-      const email = contactForm.querySelector('[name="email"]')?.value.trim();
-
-      const subject = contactForm
-        .querySelector('[name="subject"]')
-        ?.value.trim();
-
-      const message = contactForm
-        .querySelector('[name="message"]')
-        ?.value.trim();
-
-      /* =================================================
-         FRONT-END VALIDATION
-      ================================================= */
-
-      if (!name || !email || !subject || !message) {
-        status.textContent = "Please complete all required fields.";
-        status.style.color = "#d32f2f";
-
-        return;
-      }
-
-      /* =================================================
-         LOADING STATE
-      ================================================= */
-
-      const submitButton = contactForm.querySelector('button[type="submit"]');
-
-      if (submitButton) {
-        submitButton.disabled = true;
-        submitButton.dataset.originalText = submitButton.textContent;
-        submitButton.textContent = "Sending...";
-      }
-
-      status.textContent = "Sending your message...";
-      status.style.color = "#013585";
-
-      /* =================================================
-         DATA TO SEND
-      ================================================= */
-
-      const formData = {
-        name: name,
-        email: email,
-        subject: subject,
-        message: message,
-      };
-
-      /* =================================================
-         SEND TO EXPRESS API
-      ================================================= */
-
-      try {
-        const response = await fetch("http://localhost:5000/api/contact", {
-          method: "POST",
-
-          headers: {
-            "Content-Type": "application/json",
-          },
-
-          body: JSON.stringify(formData),
-        });
-
-        const data = await response.json();
-
-        /* =================================================
-           SUCCESS
-        ================================================= */
-
-        if (response.ok && data.success) {
-          status.textContent =
-            "Thank you for contacting Bavuke Foundation. Your message has been received.";
-
-          status.style.color = "#16803c";
-
-          contactForm.reset();
-
-          console.log("Contact submission successful:", data);
-        } else {
-
-        /* =================================================
-           SERVER ERROR
-        ================================================= */
-          status.textContent =
-            data.message ||
-            "Something went wrong while submitting your message.";
-
-          status.style.color = "#d32f2f";
-
-          console.error("API error:", data);
-        }
-      } catch (error) {
-        /* ===================================================
-         NETWORK ERROR
-      =================================================== */
-
-        console.error("Contact form error:", error);
-
-        status.textContent =
-          "Unable to connect to the server. Please try again later.";
-
-        status.style.color = "#d32f2f";
-      } finally {
-        /* =================================================
-         RESTORE BUTTON
-      ================================================= */
-
-        if (submitButton) {
-          submitButton.disabled = false;
-
-          submitButton.textContent =
-            submitButton.dataset.originalText || "Submit";
-        }
-      }
-    });
   }
 
   /* =====================================================
