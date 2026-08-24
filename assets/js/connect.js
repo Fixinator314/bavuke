@@ -4,6 +4,8 @@
 ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("🔥 CONNECT.JS IS RUNNING");
+
   if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
     console.warn("GSAP or ScrollTrigger is not loaded.");
 
