@@ -484,15 +484,23 @@
 }
 
 /* =========================================================
-   MOBILE
+   TABLET / MOBILE — 768px
 ========================================================= */
 
 @media (max-width: 768px) {
+  /* =====================================================
+     MAIN SECTION
+  ====================================================== */
+
   .focus-areas {
     height: auto;
 
     overflow: visible;
   }
+
+  /* =====================================================
+     INTRO
+  ====================================================== */
 
   .focus-intro {
     position: relative;
@@ -503,30 +511,82 @@
 
     min-height: 600px;
 
-    padding: 0 24px;
+    padding: 0 40px;
   }
 
   .focus-intro-number {
     top: 30px;
 
-    right: 24px;
+    right: 30px;
+
+    font-size: 9px;
+  }
+
+  .focus-intro-content {
+    max-width: 650px;
+  }
+
+  .focus-eyebrow {
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .focus-eyebrow::before {
+    width: 32px;
+
+    height: 2px;
   }
 
   .focus-intro-content h2 {
-    font-size: 20vw;
+    font-size: clamp(70px, 15vw, 115px);
 
-    letter-spacing: -5px;
+    line-height: 0.8;
+
+    letter-spacing: -6px;
   }
 
   .focus-intro-content p {
+    max-width: 500px;
+
+    margin-top: 30px;
+
     font-size: 15px;
+
+    line-height: 1.7;
   }
+
+  /* =====================================================
+     SCROLL HINT
+  ====================================================== */
 
   .focus-scroll-hint {
-    left: 24px;
+    left: 40px;
 
     bottom: 35px;
+
+    gap: 15px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.8px;
   }
+
+  .focus-scroll-arrow {
+    width: 38px;
+
+    height: 38px;
+
+    font-size: 16px;
+  }
+
+  /* =====================================================
+     TRACK
+  ====================================================== */
 
   .focus-track {
     position: relative;
@@ -542,37 +602,353 @@
     display: block;
   }
 
+  /* =====================================================
+     PANELS
+  ====================================================== */
+
   .focus-panel {
     width: 100%;
 
     height: auto;
 
-    min-height: 750px;
+    min-height: 700px;
+  }
+
+  .focus-panel-content {
+    width: calc(100% - 80px);
+
+    height: auto;
+
+    min-height: 700px;
+
+    padding: 110px 0;
+
+    justify-content: center;
+  }
+
+  /* =====================================================
+     PANEL NUMBER
+  ====================================================== */
+
+  .focus-panel-number {
+    top: 30px;
+
+    right: 30px;
+
+    font-size: 9px;
+  }
+
+  /* =====================================================
+     PANEL LABEL
+  ====================================================== */
+
+  .focus-panel-label {
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .focus-panel-label::before {
+    width: 32px;
+
+    height: 2px;
+  }
+
+  /* =====================================================
+     PANEL HEADING
+  ====================================================== */
+
+  .focus-panel-content h3 {
+    font-size: clamp(48px, 13.5vw, 58px);
+
+    line-height: 0.86;
+
+    letter-spacing: -3px;
+
+    max-width: 100%;
+
+    overflow-wrap: normal;
+
+    word-break: normal;
+  }
+
+  /* =====================================================
+     DESCRIPTION
+  ====================================================== */
+
+  .focus-panel-content > p {
+    max-width: 500px;
+
+    margin: 30px 0 35px;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  /* =====================================================
+     ITEMS
+  ====================================================== */
+
+  .focus-items {
+    width: 100%;
+
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .focus-item {
+    grid-template-columns: 32px 1fr;
+
+    gap: 14px;
+
+    padding: 18px 0;
+  }
+
+  .focus-item > span {
+    font-size: 8px;
+  }
+
+  .focus-item strong {
+    font-size: 12px;
+  }
+
+  .focus-item p {
+    margin-top: 6px;
+
+    font-size: 11px;
+
+    line-height: 1.55;
+  }
+
+  /* =====================================================
+     BACKGROUND WORD
+  ====================================================== */
+
+  .focus-panel-word {
+    right: -12%;
+
+    bottom: -5%;
+
+    font-size: 45vw;
+
+    letter-spacing: -10px;
+  }
+
+  /* =====================================================
+     PROGRESS
+  ====================================================== */
+
+  .focus-progress {
+    display: none;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE — 430px
+========================================================= */
+
+@media (max-width: 430px) {
+  /* =====================================================
+     INTRO
+  ====================================================== */
+
+  .focus-intro {
+    height: 82svh;
+
+    min-height: 560px;
+
+    padding: 0 24px;
+  }
+
+  .focus-intro-number {
+    top: 25px;
+
+    right: 24px;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+  }
+
+  .focus-intro-content {
+    max-width: 100%;
+  }
+
+  .focus-eyebrow {
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+  }
+
+  .focus-eyebrow::before {
+    width: 25px;
+
+    height: 2px;
+  }
+
+  .focus-intro-content h2 {
+    font-size: 19vw;
+
+    line-height: 0.84;
+
+    letter-spacing: -4px;
+  }
+
+  .focus-intro-content p {
+    max-width: 100%;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+  /* =====================================================
+     SCROLL HINT
+  ====================================================== */
+
+  .focus-scroll-hint {
+    left: 24px;
+
+    bottom: 25px;
+
+    gap: 12px;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .focus-scroll-arrow {
+    width: 34px;
+
+    height: 34px;
+
+    font-size: 14px;
+  }
+
+  /* =====================================================
+     PANELS
+  ====================================================== */
+
+  .focus-panel {
+    min-height: 680px;
   }
 
   .focus-panel-content {
     width: calc(100% - 48px);
 
-    padding: 100px 0;
-  }
+    min-height: 680px;
 
-  .focus-panel-content h3 {
-    font-size: 18vw;
-
-    letter-spacing: -5px;
-  }
-
-  .focus-items {
-    grid-template-columns: 1fr;
+    padding: 90px 0;
   }
 
   .focus-panel-number {
-    top: 30px;
+    top: 25px;
 
     right: 24px;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
   }
 
-  .focus-progress {
-    display: none;
+  /* =====================================================
+     PANEL LABEL
+  ====================================================== */
+
+  .focus-panel-label {
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+  }
+
+  .focus-panel-label::before {
+    width: 25px;
+
+    height: 2px;
+  }
+
+  /* =====================================================
+     PANEL HEADING
+  ====================================================== */
+
+  .focus-panel-content h3 {
+    font-size: 15vw;
+
+    line-height: 0.84;
+
+    letter-spacing: -4px;
+  }
+
+  /* =====================================================
+     DESCRIPTION
+  ====================================================== */
+
+  .focus-panel-content > p {
+    margin: 25px 0 30px;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+  /* =====================================================
+     ITEMS
+  ====================================================== */
+
+  .focus-item {
+    grid-template-columns: 27px 1fr;
+
+    gap: 11px;
+
+    padding: 16px 0;
+  }
+
+  .focus-item > span {
+    font-size: 7px;
+
+    letter-spacing: 0.5px;
+  }
+
+  .focus-item strong {
+    font-size: 11px;
+  }
+
+  .focus-item p {
+    margin-top: 5px;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+  }
+
+  /* =====================================================
+     BACKGROUND WORD
+  ====================================================== */
+
+  .focus-panel-word {
+    right: -25%;
+
+    bottom: -2%;
+
+    font-size: 55vw;
+
+    letter-spacing: -7px;
   }
 }

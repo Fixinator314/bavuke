@@ -319,85 +319,352 @@
 
   letter-spacing: 2px;
 }
-
 /* =========================================================
-   MOBILE
+   TABLET / MOBILE — 768px
 ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .vision-mission {
     min-height: auto;
+
+    padding: 0;
+
+    overflow: hidden;
   }
 
   .vision-mission-container {
-    min-height: auto;
-
     width: calc(100% - 48px);
 
-    padding: 120px 0 130px;
+    min-height: auto;
+
+    padding: 120px 0 110px;
   }
 
-  .vision-mission-intro h2 {
-    font-size: clamp(65px, 17vw, 110px);
-
-    letter-spacing: -6px;
-  }
-
-  .mission-block {
-    width: 100%;
-
-    margin-top: 150px;
-  }
-
-  .ubuntu-block {
-    grid-template-columns: 1fr;
-
-    gap: 30px;
-
-    margin-top: 150px;
-  }
+  /* =====================================================
+     BACKGROUND WORD
+  ====================================================== */
 
   .vision-mission-bg {
+    left: -18%;
+
+    top: 25%;
+
     font-size: 55vw;
 
-    letter-spacing: -10px;
+    letter-spacing: -12px;
   }
-}
 
-@media (max-width: 600px) {
+  /* =====================================================
+     NUMBER
+  ====================================================== */
+
   .vision-mission-number {
     top: 35px;
 
     right: 24px;
+
+    font-size: 9px;
+  }
+
+  /* =====================================================
+     INTRO
+  ====================================================== */
+
+  .vision-mission-intro {
+    max-width: 100%;
+  }
+
+  .vision-mission-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .vision-mission-eyebrow::before {
+    width: 30px;
+
+    height: 2px;
   }
 
   .vision-mission-intro h2 {
-    font-size: 18vw;
+    margin-top: 28px;
 
-    line-height: 0.85;
+    font-size: clamp(62px, 15vw, 105px);
+
+    line-height: 0.84;
+
+    letter-spacing: -5px;
+  }
+
+  .vision-mission-line {
+    width: 90px;
+
+    height: 3px;
+
+    margin-top: 40px;
+  }
+
+  /* =====================================================
+     MISSION
+  ====================================================== */
+
+  .mission-block {
+    width: 100%;
+
+    margin-top: 130px;
+
+    margin-left: 0;
+  }
+
+  .mission-label {
+    padding-bottom: 12px;
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
   }
 
   .mission-statement {
-    font-size: 29px;
+    margin-top: 28px;
 
-    letter-spacing: -1px;
+    font-size: clamp(29px, 5vw, 42px);
+
+    line-height: 1.18;
+
+    letter-spacing: -1.5px;
+  }
+
+  .mission-underline {
+    margin-top: 35px;
+
+    height: 2px;
+  }
+
+  /* =====================================================
+     UBUNTU
+  ====================================================== */
+
+  .ubuntu-block {
+    display: grid;
+
+    grid-template-columns: 90px 1fr;
+
+    gap: 30px;
+
+    width: 100%;
+
+    margin-top: 130px;
+  }
+
+  .ubuntu-symbol {
+    width: 75px;
+
+    height: 75px;
+
+    font-size: 30px;
+  }
+
+  .ubuntu-content > span {
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
   }
 
   .ubuntu-content h3 {
-    font-size: 48px;
+    margin: 15px 0 20px;
 
-    letter-spacing: -3px;
+    font-size: clamp(45px, 8vw, 65px);
+
+    line-height: 0.9;
+
+    letter-spacing: -4px;
   }
+
+  .ubuntu-content p {
+    max-width: 100%;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  /* =====================================================
+     BOTTOM
+  ====================================================== */
 
   .vision-mission-bottom {
     position: relative;
 
+    left: auto;
+
     bottom: auto;
 
-    flex-direction: column;
-
-    gap: 8px;
+    width: 100%;
 
     padding: 0 24px 30px;
+
+    font-size: 8px;
+  }
+}
+
+/* =========================================================
+   MOBILE — 430px
+========================================================= */
+
+@media (max-width: 430px) {
+  .vision-mission-container {
+    width: calc(100% - 36px);
+
+    padding: 100px 0 90px;
+  }
+
+  /* =====================================================
+     BACKGROUND WORD
+  ====================================================== */
+
+  .vision-mission-bg {
+    left: -28%;
+
+    top: 22%;
+
+    font-size: 72vw;
+
+    letter-spacing: -8px;
+  }
+
+  /* =====================================================
+     NUMBER
+  ====================================================== */
+
+  .vision-mission-number {
+    top: 30px;
+
+    right: 18px;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+  }
+
+  /* =====================================================
+     INTRO
+  ====================================================== */
+
+  .vision-mission-eyebrow {
+    gap: 9px;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+  }
+
+  .vision-mission-eyebrow::before {
+    width: 25px;
+
+    height: 2px;
+  }
+
+  .vision-mission-intro h2 {
+    margin-top: 24px;
+
+    font-size: 15vw;
+
+    line-height: 0.85;
+
+    letter-spacing: -4px;
+  }
+
+  .vision-mission-line {
+    width: 70px;
+
+    height: 3px;
+
+    margin-top: 32px;
+  }
+
+  /* =====================================================
+     MISSION
+  ====================================================== */
+
+  .mission-block {
+    margin-top: 105px;
+  }
+
+  .mission-label {
+    padding-bottom: 10px;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+  }
+
+  .mission-statement {
+    margin-top: 25px;
+
+    font-size: 28px;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+  }
+
+  .mission-underline {
+    margin-top: 30px;
+  }
+
+  /* =====================================================
+     UBUNTU
+  ====================================================== */
+
+  .ubuntu-block {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    margin-top: 105px;
+  }
+
+  .ubuntu-symbol {
+    width: 65px;
+
+    height: 65px;
+
+    font-size: 26px;
+  }
+
+  .ubuntu-content > span {
+    font-size: 8px;
+
+    letter-spacing: 2px;
+  }
+
+  .ubuntu-content h3 {
+    margin: 14px 0 18px;
+
+    font-size: 47px;
+
+    line-height: 0.88;
+
+    letter-spacing: -3px;
+  }
+
+  .ubuntu-content p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  /* =====================================================
+     BOTTOM
+  ====================================================== */
+
+  .vision-mission-bottom {
+    gap: 7px;
+
+    padding: 0 18px 25px;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
   }
 }
