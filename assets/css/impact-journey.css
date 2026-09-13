@@ -34,7 +34,7 @@
 
   min-height: 700px;
 
-  overflow: hidden;
+  overflow: visible; /* ← CHANGE FROM: overflow: hidden; */
 
   background: #f5f7fa;
 }
@@ -52,7 +52,7 @@
 
   z-index: 10;
 
-  width: 500px;
+  width: 600px;
 }
 
 .impact-section-eyebrow {
@@ -130,7 +130,13 @@
 
   z-index: 4;
 
-  width: max-content;
+  width: calc(100% - 14%); /* ← Accounts for 7% left margin */
+
+  max-width: none;
+
+  overflow-x: auto; /* ← Allow horizontal scroll if needed */
+
+  overflow-y: hidden;
 
   transform: translateY(-50%);
 
@@ -163,9 +169,9 @@
 
   flex: 0 0 480px;
 
-  width: 480px;
+  width: 400px;
 
-  height: 440px;
+  height: 320px;
 
   overflow: hidden;
 
