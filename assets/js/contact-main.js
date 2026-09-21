@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         console.log("Sending request to Bavuke API...");
 
-        const response = await fetch("http://localhost:5000/api/contact", {
+        const response = await fetch("./contact.php", {
           method: "POST",
 
           headers: {
@@ -149,10 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
           console.log("✅ Contact submission successfully saved.");
         } else {
-
-        /* =================================================
-           SERVER ERROR
-        ================================================= */
           status.textContent =
             data.message ||
             "Something went wrong while submitting your message.";
